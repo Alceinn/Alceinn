@@ -1,58 +1,48 @@
-<h2 align="center">Hi 👋! My name is Levent Aras EREN and I'm a Full-Stack Developer , from Turkey</h2>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Alceinn/Alceinn/main/dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Alceinn/Alceinn/main/light.svg">
+  <img alt="Levent Aras Eren - Profile" src="https://raw.githubusercontent.com/Alceinn/Alceinn/main/dark.svg">
+</picture>
 
-###
-
-<p align="center">📫 How to reach me alcein.dev@gmail.com</p>
-
-###
+<br/>
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Alceinn&hide_title=false&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=dracula&locale=en&hide_border=false" height="150" alt="stats graph"  />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=Alceinn&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=dracula&hide_border=false" height="150" alt="languages graph"  />
+  <img width="100%" src="https://streak-stats.demolab.com/?user=Alceinn&hide_border=true&background=0A101F&stroke=22D3EE&ring=A78BFA&fire=10B981&currStreakLabel=22D3EE&sideLabels=94A3B8&currStreakNum=F8FAFC&sideNums=F8FAFC&dates=64748B&titleColor=22D3EE&card_width=1180" alt="streak stats" />
+  <br/><br/>
+  <img width="49%" src="https://github-readme-stats-mu-silk-52.vercel.app/api?username=Alceinn&show_icons=true&count_private=true&include_all_commits=true&hide_rank=true&hide_border=true&title_color=22D3EE&icon_color=A78BFA&text_color=94A3B8&bg_color=0A101F&card_width=500" alt="github stats" />
+  <img width="49%" src="https://github-readme-stats-mu-silk-52.vercel.app/api/top-langs/?username=Alceinn&layout=compact&langs_count=8&hide_border=true&title_color=22D3EE&text_color=94A3B8&bg_color=0A101F&card_width=500" alt="top languages" />
 </div>
 
-###
+<br/>
 
 <div align="center">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="30" alt="javascript logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" height="30" alt="react logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="30" alt="html5 logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="30" alt="css3 logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="30" alt="python logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/aftereffects/aftereffects-original.svg" height="30" alt="aftereffects logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original.svg" height="30" alt="arduino logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg" height="30" alt="laravel logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original-wordmark.svg" height="30" alt="tailwindcss logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg" height="30" alt="photoshop logo"  />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Alceinn/Alceinn/output/github-snake-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Alceinn/Alceinn/output/github-snake.svg" />
+    <img alt="Contribution Snake" src="https://raw.githubusercontent.com/Alceinn/Alceinn/output/github-snake.svg" />
+  </picture>
 </div>
 
-###
-
-<br clear="both">
-
-<img src="https://raw.githubusercontent.com/Alceinn/Alceinn/output/snake.svg" alt="Snake animation" />
-
-###
+<br/>
 
 <div align="center">
-  <a href="https://me.linkedin.com/in/levent-aras-eren-893183340" target="_blank">
-    <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/linkedin/default.svg" width="52" height="40" alt="linkedin logo"  />
+  <a href="https://www.linkedin.com/in/levent-aras-eren-893183340" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
   </a>
-  <a href="https://x.com/Alcein_?t=cNH2yrBdccUvVDtomPWBXg&s=09" target="_blank">
-    <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/twitter/default.svg" width="52" height="40" alt="twitter logo"  />
+  &nbsp;&nbsp;
+  <a href="https://x.com/Alcein_" target="_blank">
+    <img src="https://img.shields.io/badge/X-0A101F?style=for-the-badge&logo=x&logoColor=22D3EE&labelColor=0A101F" alt="Twitter/X" />
   </a>
+  &nbsp;&nbsp;
   <a href="https://discord.gg/EG3W9NN3QE" target="_blank">
-    <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/discord/default.svg" width="52" height="40" alt="discord logo"  />
+    <img src="https://img.shields.io/badge/Discord-0A101F?style=for-the-badge&logo=discord&logoColor=A78BFA&labelColor=0A101F" alt="Discord" />
+  </a>
+  &nbsp;&nbsp;
+  <a href="mailto:alcein.dev@gmail.com">
+    <img src="https://img.shields.io/badge/Email-0A101F?style=for-the-badge&logo=gmail&logoColor=10B981&labelColor=0A101F" alt="Email" />
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://alcein.com.tr" target="_blank">
+    <img src="https://img.shields.io/badge/Portfolio-0A101F?style=for-the-badge&logo=google-chrome&logoColor=22D3EE&labelColor=0A101F" alt="Portfolio" />
   </a>
 </div>
-
-###
