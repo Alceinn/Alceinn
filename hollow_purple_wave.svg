@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 340" width="1180" height="340" fill="none">
   <defs>
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800;900&amp;display=swap');
+    <style><![CDATA[
+      @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800;900&display=swap');
       
       .font-sans {
         font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -104,7 +104,7 @@
         42%, 100% { opacity: 0; }
       }
 
-      /* PHASE 3: 烏と声明 (CROW & DECLARATION) [42% - 58%] */
+      /* PHASE 3: 烏と声明 (CROW AND DECLARATION) [42% - 58%] */
       @keyframes chant-phase-3 {
         0%, 41% { opacity: 0; }
         44% { opacity: 0; transform: translateY(8px); }
@@ -114,7 +114,7 @@
         61%, 100% { opacity: 0; }
       }
 
-      /* PHASE 4: 表裏の間 (BETWEEN FRONT & BACK) [61% - 72%] */
+      /* PHASE 4: 表裏の間 (BETWEEN FRONT AND BACK) [61% - 72%] */
       @keyframes chant-phase-4 {
         0%, 60% { opacity: 0; }
         62% { opacity: 0; transform: translateY(8px); }
@@ -148,7 +148,7 @@
       .p3 { animation: chant-phase-3 8.5s ease-in-out infinite; }
       .p4 { animation: chant-phase-4 8.5s ease-in-out infinite; }
       .p5 { animation: chant-phase-5 8.5s ease-in-out infinite; }
-    </style>
+    ]]></style>
 
     <!-- Deep Void Cosmic Radial -->
     <radialGradient id="hollowVoidBg" cx="50%" cy="50%" r="75%">

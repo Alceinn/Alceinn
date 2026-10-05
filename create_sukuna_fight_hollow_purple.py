@@ -1,8 +1,5 @@
 import os
-import base64
-import random
-from PIL import Image, ImageEnhance, ImageOps
-import io
+import xml.etree.ElementTree as ET
 
 def generate_hollow_purple_sukuna_climax():
     """
@@ -13,12 +10,13 @@ def generate_hollow_purple_sukuna_climax():
     - They rush to the center and collide into Hollow Purple (茈 - Murasaki)
     - Epic expanding Supernova shockwave & energy explosion
     - Incantations (九綱 -> 偏光 -> 烏と声明 -> 表裏の間 -> 虚式「茈」) appear sequentially in center without overlapping!
+    - 100% valid XML with CDATA wrapped CSS and escaped entities!
     """
 
     svg_code = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 340" width="1180" height="340" fill="none">
   <defs>
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800;900&amp;display=swap');
+    <style><![CDATA[
+      @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800;900&display=swap');
       
       .font-sans {
         font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -121,7 +119,7 @@ def generate_hollow_purple_sukuna_climax():
         42%, 100% { opacity: 0; }
       }
 
-      /* PHASE 3: 烏と声明 (CROW & DECLARATION) [42% - 58%] */
+      /* PHASE 3: 烏と声明 (CROW AND DECLARATION) [42% - 58%] */
       @keyframes chant-phase-3 {
         0%, 41% { opacity: 0; }
         44% { opacity: 0; transform: translateY(8px); }
@@ -131,7 +129,7 @@ def generate_hollow_purple_sukuna_climax():
         61%, 100% { opacity: 0; }
       }
 
-      /* PHASE 4: 表裏の間 (BETWEEN FRONT & BACK) [61% - 72%] */
+      /* PHASE 4: 表裏の間 (BETWEEN FRONT AND BACK) [61% - 72%] */
       @keyframes chant-phase-4 {
         0%, 60% { opacity: 0; }
         62% { opacity: 0; transform: translateY(8px); }
@@ -165,7 +163,7 @@ def generate_hollow_purple_sukuna_climax():
       .p3 { animation: chant-phase-3 8.5s ease-in-out infinite; }
       .p4 { animation: chant-phase-4 8.5s ease-in-out infinite; }
       .p5 { animation: chant-phase-5 8.5s ease-in-out infinite; }
-    </style>
+    ]]></style>
 
     <!-- Deep Void Cosmic Radial -->
     <radialGradient id="hollowVoidBg" cx="50%" cy="50%" r="75%">
@@ -350,7 +348,10 @@ def generate_hollow_purple_sukuna_climax():
     repo_output = os.path.join(r"C:\Users\leven\.gemini\antigravity\scratch\Alceinn_repo", "hollow_purple_wave.svg")
     with open(repo_output, 'w', encoding='utf-8') as f:
         f.write(svg_code)
-    print(f"Generated Sukuna-climax hollow_purple_wave.svg ({os.path.getsize(repo_output)/1024:.1f} KB)")
+    
+    # Strict XML Validation
+    ET.parse(repo_output)
+    print(f"Generated and STRICTLY VALIDATED Sukuna-climax hollow_purple_wave.svg ({os.path.getsize(repo_output)/1024:.1f} KB)")
 
 if __name__ == "__main__":
     generate_hollow_purple_sukuna_climax()
