@@ -17,10 +17,8 @@
 
 <!-- MINIMALIST COSMIC STATS -->
 <div align="center">
-  <img width="100%" src="https://streak-stats.demolab.com/?user=Alceinn&hide_border=true&background=040408&stroke=FFFFFF&ring=A855F7&fire=C084FC&currStreakLabel=FFFFFF&sideLabels=94A3B8&currStreakNum=FFFFFF&sideNums=FFFFFF&dates=64748B&titleColor=FFFFFF&card_width=1180" alt="streak stats" />
-  <br/><br/>
-  <img width="49%" src="https://github-readme-stats-mu-silk-52.vercel.app/api?username=Alceinn&show_icons=true&count_private=true&include_all_commits=true&hide_rank=true&hide_border=true&title_color=FFFFFF&icon_color=C084FC&text_color=94A3B8&bg_color=040408&card_width=500" alt="github stats" />
-  <img width="49%" src="https://github-readme-stats-mu-silk-52.vercel.app/api/top-langs/?username=Alceinn&layout=compact&langs_count=8&hide_border=true&title_color=FFFFFF&text_color=94A3B8&bg_color=040408&card_width=500" alt="top languages" />
+  <img width="49.5%" src="https://github-readme-stats-mu-silk-52.vercel.app/api?username=Alceinn&show_icons=true&count_private=true&include_all_commits=true&hide_rank=true&hide_border=true&title_color=FFFFFF&icon_color=C084FC&text_color=94A3B8&bg_color=040408" alt="github stats" />
+  <img width="49.5%" src="https://github-readme-stats-mu-silk-52.vercel.app/api/top-langs/?username=Alceinn&layout=compact&langs_count=8&hide_border=true&title_color=FFFFFF&text_color=94A3B8&bg_color=040408" alt="top languages" />
 </div>
 
 <br/>

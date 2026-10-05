@@ -1,4 +1,21 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 340" width="1180" height="340" fill="none">
+import os
+import base64
+import random
+from PIL import Image, ImageEnhance, ImageOps
+import io
+
+def generate_hollow_purple_sukuna_climax():
+    """
+    Creates an epic Hollow Purple Fusion & Incantation animation inspired by
+    Gojo vs Sukuna climax (Unlimited Hollow Purple):
+    - Left: Blue (蒼 - Ao)
+    - Right: Red (赫 - Aka)
+    - They rush to the center and collide into Hollow Purple (茈 - Murasaki)
+    - Epic expanding Supernova shockwave & energy explosion
+    - Incantations (九綱 -> 偏光 -> 烏と声明 -> 表裏の間 -> 虚式「茈」) appear sequentially in center without overlapping!
+    """
+
+    svg_code = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 340" width="1180" height="340" fill="none">
   <defs>
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800;900&amp;display=swap');
@@ -325,4 +342,15 @@
   <g class="font-sans" transform="translate(590, 318)" text-anchor="middle" font-size="11" font-weight="600" fill="rgba(255,255,255,0.4)">
     <text x="0" y="0">DOMAIN STATUS: MAXIMUM UNRESTRICTED OUTPUT · TARGET: INFINITE HORIZON</text>
   </g>
-</svg>
+</svg>"""
+
+    scratch_path = os.path.join(r"C:\Users\leven\.gemini\antigravity\brain\c3fec2c6-884c-4ac6-b9ac-403ef9ea1318\scratch", "hollow_purple_wave.svg")
+    with open(scratch_path, 'w', encoding='utf-8') as f:
+        f.write(svg_code)
+    repo_output = os.path.join(r"C:\Users\leven\.gemini\antigravity\scratch\Alceinn_repo", "hollow_purple_wave.svg")
+    with open(repo_output, 'w', encoding='utf-8') as f:
+        f.write(svg_code)
+    print(f"Generated Sukuna-climax hollow_purple_wave.svg ({os.path.getsize(repo_output)/1024:.1f} KB)")
+
+if __name__ == "__main__":
+    generate_hollow_purple_sukuna_climax()
