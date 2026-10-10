@@ -5,338 +5,340 @@
       .font-sans { font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif; }
 
       /* ========================================================================= */
-      /* ULTRA-SMOOTH BLACK HOLE INSPIRAL TIMELINE (16 SECONDS TOTAL)               */
+      /* TRUE BINARY BLACK HOLE INSPIRAL KEYFRAMES                                 */
       /* ========================================================================= */
 
-      @keyframes blue-orbit-smooth {
-        0% { transform: translate(80.00px, 0.00px) scale(1.000); opacity: 0.000; }
-        1% { transform: translate(86.80px, 0.00px) scale(1.010); opacity: 0.250; }
-        2% { transform: translate(93.59px, 0.00px) scale(1.021); opacity: 0.500; }
-        3% { transform: translate(100.34px, 0.00px) scale(1.031); opacity: 0.750; }
-        4% { transform: translate(107.03px, 0.00px) scale(1.041); opacity: 1.000; }
-        5% { transform: translate(113.65px, 0.00px) scale(1.050); opacity: 1.000; }
-        6% { transform: translate(120.17px, 0.00px) scale(1.059); opacity: 1.000; }
-        7% { transform: translate(126.59px, 0.00px) scale(1.067); opacity: 1.000; }
-        8% { transform: translate(132.88px, 0.00px) scale(1.074); opacity: 1.000; }
-        9% { transform: translate(139.02px, 0.00px) scale(1.081); opacity: 1.000; }
-        10% { transform: translate(145.00px, 0.00px) scale(1.087); opacity: 1.000; }
-        11% { transform: translate(150.80px, 0.00px) scale(1.091); opacity: 1.000; }
-        12% { transform: translate(156.41px, 0.00px) scale(1.095); opacity: 1.000; }
-        13% { transform: translate(161.81px, 0.00px) scale(1.098); opacity: 1.000; }
-        14% { transform: translate(166.99px, 0.00px) scale(1.099); opacity: 1.000; }
-        15% { transform: translate(171.92px, 0.00px) scale(1.100); opacity: 1.000; }
-        16% { transform: translate(176.61px, 0.00px) scale(1.099); opacity: 1.000; }
-        17% { transform: translate(181.03px, 0.00px) scale(1.098); opacity: 1.000; }
-        18% { transform: translate(185.17px, 0.00px) scale(1.095); opacity: 1.000; }
-        19% { transform: translate(189.03px, 0.00px) scale(1.091); opacity: 1.000; }
-        20% { transform: translate(192.58px, 0.00px) scale(1.087); opacity: 1.000; }
-        21% { transform: translate(195.83px, 0.00px) scale(1.081); opacity: 1.000; }
-        22% { transform: translate(198.76px, 0.00px) scale(1.074); opacity: 1.000; }
-        23% { transform: translate(201.37px, 0.00px) scale(1.067); opacity: 1.000; }
-        24% { transform: translate(203.64px, 0.00px) scale(1.059); opacity: 1.000; }
-        25% { transform: translate(205.57px, 0.00px) scale(1.050); opacity: 1.000; }
-        26% { transform: translate(207.16px, 0.00px) scale(1.041); opacity: 1.000; }
-        27% { transform: translate(208.40px, 0.00px) scale(1.031); opacity: 1.000; }
-        28% { transform: translate(209.29px, 0.00px) scale(1.021); opacity: 1.000; }
-        29% { transform: translate(209.82px, 0.00px) scale(1.010); opacity: 1.000; }
-        30% { transform: translate(210.00px, 0.00px) scale(1.000); opacity: 1.000; }
-        31% { transform: translate(219.00px, -36.25px) scale(1.057); opacity: 1.000; }
-        32% { transform: translate(250.39px, -67.65px) scale(1.065); opacity: 1.000; }
-        33% { transform: translate(294.72px, -91.87px) scale(1.072); opacity: 1.000; }
-        34% { transform: translate(347.65px, -107.28px) scale(1.079); opacity: 1.000; }
-        35% { transform: translate(404.33px, -113.10px) scale(1.086); opacity: 1.000; }
-        36% { transform: translate(459.87px, -109.38px) scale(1.094); opacity: 1.000; }
-        37% { transform: translate(509.75px, -96.97px) scale(1.101); opacity: 1.000; }
-        38% { transform: translate(550.16px, -77.40px) scale(1.108); opacity: 1.000; }
-        39% { transform: translate(578.32px, -52.72px) scale(1.116); opacity: 1.000; }
-        40% { transform: translate(592.64px, -25.28px) scale(1.123); opacity: 1.000; }
-        41% { transform: translate(592.79px, 2.47px) scale(1.130); opacity: 1.000; }
-        42% { transform: translate(579.66px, 28.20px) scale(1.137); opacity: 1.000; }
-        43% { transform: translate(555.20px, 49.91px) scale(1.145); opacity: 1.000; }
-        44% { transform: translate(522.21px, 66.04px) scale(1.152); opacity: 1.000; }
-        45% { transform: translate(484.02px, 75.65px) scale(1.159); opacity: 1.000; }
-        46% { transform: translate(444.20px, 78.37px) scale(1.167); opacity: 1.000; }
-        47% { transform: translate(406.20px, 74.49px) scale(1.174); opacity: 1.000; }
-        48% { transform: translate(373.06px, 64.81px) scale(1.181); opacity: 1.000; }
-        49% { transform: translate(347.21px, 50.60px) scale(1.189); opacity: 1.000; }
-        50% { transform: translate(330.26px, 33.40px) scale(1.196); opacity: 1.000; }
-        51% { transform: translate(322.91px, 14.91px) scale(1.203); opacity: 1.000; }
-        52% { transform: translate(325.00px, -3.19px) scale(1.210); opacity: 1.000; }
-        53% { transform: translate(335.53px, -19.40px) scale(1.218); opacity: 1.000; }
-        54% { transform: translate(352.86px, -32.51px) scale(1.225); opacity: 1.000; }
-        55% { transform: translate(374.88px, -41.66px) scale(1.232); opacity: 1.000; }
-        56% { transform: translate(399.25px, -46.45px) scale(1.240); opacity: 1.000; }
-        57% { transform: translate(423.64px, -46.90px) scale(1.247); opacity: 1.000; }
-        58% { transform: translate(445.90px, -43.40px) scale(1.254); opacity: 1.000; }
-        59% { transform: translate(464.33px, -36.67px) scale(1.261); opacity: 1.000; }
-        60% { transform: translate(477.71px, -27.67px) scale(1.269); opacity: 1.000; }
-        61% { transform: translate(485.43px, -17.45px) scale(1.276); opacity: 1.000; }
-        62% { transform: translate(487.46px, -7.08px) scale(1.283); opacity: 1.000; }
-        63% { transform: translate(484.33px, 2.48px) scale(1.291); opacity: 1.000; }
-        64% { transform: translate(476.99px, 10.46px) scale(1.298); opacity: 1.000; }
-        65% { transform: translate(466.71px, 16.34px) scale(1.305); opacity: 1.000; }
-        66% { transform: translate(454.86px, 19.84px) scale(1.312); opacity: 1.000; }
-        67% { transform: translate(442.82px, 21.00px) scale(1.320); opacity: 1.000; }
-        68% { transform: translate(431.81px, 20.06px) scale(1.327); opacity: 1.000; }
-        69% { transform: translate(422.77px, 17.46px) scale(1.334); opacity: 1.000; }
-        70% { transform: translate(416.29px, 13.77px) scale(1.342); opacity: 1.000; }
-        71% { transform: translate(412.59px, 9.58px) scale(1.349); opacity: 1.000; }
-        72% { transform: translate(411.52px, 5.46px) scale(1.356); opacity: 1.000; }
-        73% { transform: translate(412.67px, 1.86px) scale(1.364); opacity: 1.000; }
-        74% { transform: translate(415.38px, -0.89px) scale(1.371); opacity: 1.000; }
-        75% { transform: translate(418.93px, -2.66px) scale(1.378); opacity: 1.000; }
-        76% { transform: translate(422.59px, -3.48px) scale(1.385); opacity: 1.000; }
-        77% { transform: translate(425.79px, -3.55px) scale(1.393); opacity: 1.000; }
-        78% { transform: translate(428.15px, -3.31px) scale(1.400); opacity: 1.000; }
-        79% { transform: translate(430.00px, 0.00px) scale(0.933); opacity: 0.667; }
-        80% { transform: translate(430.00px, 0.00px) scale(0.467); opacity: 0.333; }
-        81% { transform: translate(430.00px, 0.00px) scale(0.010); opacity: 0.000; }
-        82% { transform: translate(430.00px, 0.00px) scale(0.000); opacity: 0.000; }
-        83% { transform: translate(430.00px, 0.00px) scale(0.000); opacity: 0.000; }
-        84% { transform: translate(430.00px, 0.00px) scale(0.000); opacity: 0.000; }
-        85% { transform: translate(430.00px, 0.00px) scale(0.000); opacity: 0.000; }
-        86% { transform: translate(430.00px, 0.00px) scale(0.000); opacity: 0.000; }
-        87% { transform: translate(430.00px, 0.00px) scale(0.000); opacity: 0.000; }
-        88% { transform: translate(430.00px, 0.00px) scale(0.000); opacity: 0.000; }
-        89% { transform: translate(430.00px, 0.00px) scale(0.000); opacity: 0.000; }
-        90% { transform: translate(430.00px, 0.00px) scale(0.000); opacity: 0.000; }
-        91% { transform: translate(430.00px, 0.00px) scale(0.000); opacity: 0.000; }
-        92% { transform: translate(430.00px, 0.00px) scale(0.000); opacity: 0.000; }
-        93% { transform: translate(430.00px, 0.00px) scale(0.000); opacity: 0.000; }
-        94% { transform: translate(430.00px, 0.00px) scale(0.000); opacity: 0.000; }
-        95% { transform: translate(430.00px, 0.00px) scale(0.000); opacity: 0.000; }
-        96% { transform: translate(430.00px, 0.00px) scale(0.000); opacity: 0.000; }
-        97% { transform: translate(430.00px, 0.00px) scale(0.000); opacity: 0.000; }
-        98% { transform: translate(430.00px, 0.00px) scale(0.000); opacity: 0.000; }
-        99% { transform: translate(430.00px, 0.00px) scale(0.000); opacity: 0.000; }
-        100% { transform: translate(430.00px, 0.00px) scale(0.000); opacity: 0.000; }
+      @keyframes blue-inspiral {
+        0% { transform: translate(180.00px, 190.00px) scale(1.000); opacity: 0.000; }
+        1% { transform: translate(180.00px, 190.00px) scale(1.015); opacity: 0.333; }
+        2% { transform: translate(180.00px, 190.00px) scale(1.029); opacity: 0.667; }
+        3% { transform: translate(180.00px, 190.00px) scale(1.041); opacity: 1.000; }
+        4% { transform: translate(180.00px, 190.00px) scale(1.051); opacity: 1.000; }
+        5% { transform: translate(180.00px, 190.00px) scale(1.057); opacity: 1.000; }
+        6% { transform: translate(180.00px, 190.00px) scale(1.060); opacity: 1.000; }
+        7% { transform: translate(180.00px, 190.00px) scale(1.059); opacity: 1.000; }
+        8% { transform: translate(180.00px, 190.00px) scale(1.054); opacity: 1.000; }
+        9% { transform: translate(180.00px, 190.00px) scale(1.046); opacity: 1.000; }
+        10% { transform: translate(180.00px, 190.00px) scale(1.035); opacity: 1.000; }
+        11% { transform: translate(180.00px, 190.00px) scale(1.022); opacity: 1.000; }
+        12% { transform: translate(180.00px, 190.00px) scale(1.008); opacity: 1.000; }
+        13% { transform: translate(180.00px, 190.00px) scale(0.992); opacity: 1.000; }
+        14% { transform: translate(180.00px, 190.00px) scale(0.978); opacity: 1.000; }
+        15% { transform: translate(180.00px, 190.00px) scale(0.965); opacity: 1.000; }
+        16% { transform: translate(180.00px, 190.00px) scale(0.954); opacity: 1.000; }
+        17% { transform: translate(180.00px, 190.00px) scale(0.946); opacity: 1.000; }
+        18% { transform: translate(180.00px, 190.00px) scale(0.941); opacity: 1.000; }
+        19% { transform: translate(180.00px, 190.00px) scale(0.940); opacity: 1.000; }
+        20% { transform: translate(180.00px, 190.00px) scale(0.943); opacity: 1.000; }
+        21% { transform: translate(180.00px, 190.00px) scale(0.949); opacity: 1.000; }
+        22% { transform: translate(180.00px, 190.00px) scale(0.959); opacity: 1.000; }
+        23% { transform: translate(180.00px, 190.00px) scale(0.971); opacity: 1.000; }
+        24% { transform: translate(180.00px, 190.00px) scale(0.985); opacity: 1.000; }
+        25% { transform: translate(180.00px, 190.00px) scale(1.000); opacity: 1.000; }
+        26% { transform: translate(181.21px, 190.00px) scale(1.001); opacity: 1.000; }
+        27% { transform: translate(184.82px, 190.00px) scale(1.003); opacity: 1.000; }
+        28% { transform: translate(190.76px, 190.00px) scale(1.006); opacity: 1.000; }
+        29% { transform: translate(198.93px, 190.00px) scale(1.011); opacity: 1.000; }
+        30% { transform: translate(209.16px, 190.00px) scale(1.017); opacity: 1.000; }
+        31% { transform: translate(221.27px, 190.00px) scale(1.024); opacity: 1.000; }
+        32% { transform: translate(235.03px, 190.00px) scale(1.032); opacity: 1.000; }
+        33% { transform: translate(250.19px, 190.00px) scale(1.040); opacity: 1.000; }
+        34% { transform: translate(266.47px, 190.00px) scale(1.050); opacity: 1.000; }
+        35% { transform: translate(283.55px, 190.00px) scale(1.060); opacity: 1.000; }
+        36% { transform: translate(301.13px, 190.00px) scale(1.070); opacity: 1.000; }
+        37% { transform: translate(318.87px, 190.00px) scale(1.080); opacity: 1.000; }
+        38% { transform: translate(336.45px, 190.00px) scale(1.090); opacity: 1.000; }
+        39% { transform: translate(353.53px, 190.00px) scale(1.100); opacity: 1.000; }
+        40% { transform: translate(369.81px, 190.00px) scale(1.110); opacity: 1.000; }
+        41% { transform: translate(384.97px, 190.00px) scale(1.118); opacity: 1.000; }
+        42% { transform: translate(398.73px, 190.00px) scale(1.126); opacity: 1.000; }
+        43% { transform: translate(410.84px, 190.00px) scale(1.133); opacity: 1.000; }
+        44% { transform: translate(421.07px, 190.00px) scale(1.139); opacity: 1.000; }
+        45% { transform: translate(429.24px, 190.00px) scale(1.144); opacity: 1.000; }
+        46% { transform: translate(435.18px, 190.00px) scale(1.147); opacity: 1.000; }
+        47% { transform: translate(438.79px, 190.00px) scale(1.149); opacity: 1.000; }
+        48% { transform: translate(440.00px, 190.00px) scale(1.150); opacity: 1.000; }
+        49% { transform: translate(460.53px, 139.72px) scale(1.159); opacity: 1.000; }
+        50% { transform: translate(521.90px, 107.74px) scale(1.168); opacity: 1.000; }
+        51% { transform: translate(596.13px, 101.22px) scale(1.177); opacity: 1.000; }
+        52% { transform: translate(661.52px, 119.58px) scale(1.186); opacity: 1.000; }
+        53% { transform: translate(700.83px, 155.31px) scale(1.195); opacity: 1.000; }
+        54% { transform: translate(705.85px, 196.78px) scale(1.204); opacity: 1.000; }
+        55% { transform: translate(678.77px, 231.92px) scale(1.212); opacity: 1.000; }
+        56% { transform: translate(630.58px, 251.71px) scale(1.221); opacity: 1.000; }
+        57% { transform: translate(577.00px, 252.39px) scale(1.230); opacity: 1.000; }
+        58% { transform: translate(533.50px, 236.05px) scale(1.239); opacity: 1.000; }
+        59% { transform: translate(510.91px, 209.29px) scale(1.248); opacity: 1.000; }
+        60% { transform: translate(512.79px, 180.89px) scale(1.257); opacity: 1.000; }
+        61% { transform: translate(535.34px, 158.96px) scale(1.266); opacity: 1.000; }
+        62% { transform: translate(569.34px, 148.68px) scale(1.275); opacity: 1.000; }
+        63% { transform: translate(603.63px, 151.19px) scale(1.284); opacity: 1.000; }
+        64% { transform: translate(628.55px, 163.79px) scale(1.293); opacity: 1.000; }
+        65% { transform: translate(638.67px, 181.27px) scale(1.302); opacity: 1.000; }
+        66% { transform: translate(633.73px, 197.84px) scale(1.311); opacity: 1.000; }
+        67% { transform: translate(617.92px, 208.98px) scale(1.320); opacity: 1.000; }
+        68% { transform: translate(597.93px, 212.59px) scale(1.329); opacity: 1.000; }
+        69% { transform: translate(580.39px, 209.22px) scale(1.337); opacity: 1.000; }
+        70% { transform: translate(569.86px, 201.44px) scale(1.346); opacity: 1.000; }
+        71% { transform: translate(567.71px, 192.63px) scale(1.355); opacity: 1.000; }
+        72% { transform: translate(572.36px, 185.70px) scale(1.364); opacity: 1.000; }
+        73% { transform: translate(580.43px, 182.20px) scale(1.373); opacity: 1.000; }
+        74% { transform: translate(588.36px, 182.11px) scale(1.382); opacity: 1.000; }
+        75% { transform: translate(593.80px, 184.22px) scale(1.391); opacity: 1.000; }
+        76% { transform: translate(596.47px, 186.94px) scale(1.400); opacity: 1.000; }
+        77% { transform: translate(590.00px, 190.00px) scale(0.622); opacity: 0.667; }
+        78% { transform: translate(590.00px, 190.00px) scale(0.156); opacity: 0.333; }
+        79% { transform: translate(590.00px, 190.00px) scale(0.010); opacity: 0.000; }
+        80% { transform: translate(590.00px, 190.00px) scale(0.000); opacity: 0.000; }
+        81% { transform: translate(590.00px, 190.00px) scale(0.000); opacity: 0.000; }
+        82% { transform: translate(590.00px, 190.00px) scale(0.000); opacity: 0.000; }
+        83% { transform: translate(590.00px, 190.00px) scale(0.000); opacity: 0.000; }
+        84% { transform: translate(590.00px, 190.00px) scale(0.000); opacity: 0.000; }
+        85% { transform: translate(590.00px, 190.00px) scale(0.000); opacity: 0.000; }
+        86% { transform: translate(590.00px, 190.00px) scale(0.000); opacity: 0.000; }
+        87% { transform: translate(590.00px, 190.00px) scale(0.000); opacity: 0.000; }
+        88% { transform: translate(590.00px, 190.00px) scale(0.000); opacity: 0.000; }
+        89% { transform: translate(590.00px, 190.00px) scale(0.000); opacity: 0.000; }
+        90% { transform: translate(590.00px, 190.00px) scale(0.000); opacity: 0.000; }
+        91% { transform: translate(590.00px, 190.00px) scale(0.000); opacity: 0.000; }
+        92% { transform: translate(590.00px, 190.00px) scale(0.000); opacity: 0.000; }
+        93% { transform: translate(590.00px, 190.00px) scale(0.000); opacity: 0.000; }
+        94% { transform: translate(590.00px, 190.00px) scale(0.000); opacity: 0.000; }
+        95% { transform: translate(590.00px, 190.00px) scale(0.000); opacity: 0.000; }
+        96% { transform: translate(590.00px, 190.00px) scale(0.000); opacity: 0.000; }
+        97% { transform: translate(590.00px, 190.00px) scale(0.000); opacity: 0.000; }
+        98% { transform: translate(590.00px, 190.00px) scale(0.000); opacity: 0.000; }
+        99% { transform: translate(590.00px, 190.00px) scale(0.000); opacity: 0.000; }
+        100% { transform: translate(590.00px, 190.00px) scale(0.000); opacity: 0.000; }
       }
 
-      @keyframes red-orbit-smooth {
-        0% { transform: translate(-80.00px, 0.00px) scale(1.000); opacity: 0.000; }
-        1% { transform: translate(-86.80px, 0.00px) scale(1.010); opacity: 0.250; }
-        2% { transform: translate(-93.59px, 0.00px) scale(1.021); opacity: 0.500; }
-        3% { transform: translate(-100.34px, 0.00px) scale(1.031); opacity: 0.750; }
-        4% { transform: translate(-107.03px, 0.00px) scale(1.041); opacity: 1.000; }
-        5% { transform: translate(-113.65px, 0.00px) scale(1.050); opacity: 1.000; }
-        6% { transform: translate(-120.17px, 0.00px) scale(1.059); opacity: 1.000; }
-        7% { transform: translate(-126.59px, 0.00px) scale(1.067); opacity: 1.000; }
-        8% { transform: translate(-132.88px, 0.00px) scale(1.074); opacity: 1.000; }
-        9% { transform: translate(-139.02px, 0.00px) scale(1.081); opacity: 1.000; }
-        10% { transform: translate(-145.00px, 0.00px) scale(1.087); opacity: 1.000; }
-        11% { transform: translate(-150.80px, 0.00px) scale(1.091); opacity: 1.000; }
-        12% { transform: translate(-156.41px, 0.00px) scale(1.095); opacity: 1.000; }
-        13% { transform: translate(-161.81px, 0.00px) scale(1.098); opacity: 1.000; }
-        14% { transform: translate(-166.99px, 0.00px) scale(1.099); opacity: 1.000; }
-        15% { transform: translate(-171.92px, 0.00px) scale(1.100); opacity: 1.000; }
-        16% { transform: translate(-176.61px, 0.00px) scale(1.099); opacity: 1.000; }
-        17% { transform: translate(-181.03px, 0.00px) scale(1.098); opacity: 1.000; }
-        18% { transform: translate(-185.17px, 0.00px) scale(1.095); opacity: 1.000; }
-        19% { transform: translate(-189.03px, 0.00px) scale(1.091); opacity: 1.000; }
-        20% { transform: translate(-192.58px, 0.00px) scale(1.087); opacity: 1.000; }
-        21% { transform: translate(-195.83px, 0.00px) scale(1.081); opacity: 1.000; }
-        22% { transform: translate(-198.76px, 0.00px) scale(1.074); opacity: 1.000; }
-        23% { transform: translate(-201.37px, 0.00px) scale(1.067); opacity: 1.000; }
-        24% { transform: translate(-203.64px, 0.00px) scale(1.059); opacity: 1.000; }
-        25% { transform: translate(-205.57px, 0.00px) scale(1.050); opacity: 1.000; }
-        26% { transform: translate(-207.16px, 0.00px) scale(1.041); opacity: 1.000; }
-        27% { transform: translate(-208.40px, 0.00px) scale(1.031); opacity: 1.000; }
-        28% { transform: translate(-209.29px, 0.00px) scale(1.021); opacity: 1.000; }
-        29% { transform: translate(-209.82px, 0.00px) scale(1.010); opacity: 1.000; }
-        30% { transform: translate(-210.00px, 0.00px) scale(1.000); opacity: 1.000; }
-        31% { transform: translate(-219.00px, 36.25px) scale(1.057); opacity: 1.000; }
-        32% { transform: translate(-250.39px, 67.65px) scale(1.065); opacity: 1.000; }
-        33% { transform: translate(-294.72px, 91.87px) scale(1.072); opacity: 1.000; }
-        34% { transform: translate(-347.65px, 107.28px) scale(1.079); opacity: 1.000; }
-        35% { transform: translate(-404.33px, 113.10px) scale(1.086); opacity: 1.000; }
-        36% { transform: translate(-459.87px, 109.38px) scale(1.094); opacity: 1.000; }
-        37% { transform: translate(-509.75px, 96.97px) scale(1.101); opacity: 1.000; }
-        38% { transform: translate(-550.16px, 77.40px) scale(1.108); opacity: 1.000; }
-        39% { transform: translate(-578.32px, 52.72px) scale(1.116); opacity: 1.000; }
-        40% { transform: translate(-592.64px, 25.28px) scale(1.123); opacity: 1.000; }
-        41% { transform: translate(-592.79px, -2.47px) scale(1.130); opacity: 1.000; }
-        42% { transform: translate(-579.66px, -28.20px) scale(1.137); opacity: 1.000; }
-        43% { transform: translate(-555.20px, -49.91px) scale(1.145); opacity: 1.000; }
-        44% { transform: translate(-522.21px, -66.04px) scale(1.152); opacity: 1.000; }
-        45% { transform: translate(-484.02px, -75.65px) scale(1.159); opacity: 1.000; }
-        46% { transform: translate(-444.20px, -78.37px) scale(1.167); opacity: 1.000; }
-        47% { transform: translate(-406.20px, -74.49px) scale(1.174); opacity: 1.000; }
-        48% { transform: translate(-373.06px, -64.81px) scale(1.181); opacity: 1.000; }
-        49% { transform: translate(-347.21px, -50.60px) scale(1.189); opacity: 1.000; }
-        50% { transform: translate(-330.26px, -33.40px) scale(1.196); opacity: 1.000; }
-        51% { transform: translate(-322.91px, -14.91px) scale(1.203); opacity: 1.000; }
-        52% { transform: translate(-325.00px, 3.19px) scale(1.210); opacity: 1.000; }
-        53% { transform: translate(-335.53px, 19.40px) scale(1.218); opacity: 1.000; }
-        54% { transform: translate(-352.86px, 32.51px) scale(1.225); opacity: 1.000; }
-        55% { transform: translate(-374.88px, 41.66px) scale(1.232); opacity: 1.000; }
-        56% { transform: translate(-399.25px, 46.45px) scale(1.240); opacity: 1.000; }
-        57% { transform: translate(-423.64px, 46.90px) scale(1.247); opacity: 1.000; }
-        58% { transform: translate(-445.90px, 43.40px) scale(1.254); opacity: 1.000; }
-        59% { transform: translate(-464.33px, 36.67px) scale(1.261); opacity: 1.000; }
-        60% { transform: translate(-477.71px, 27.67px) scale(1.269); opacity: 1.000; }
-        61% { transform: translate(-485.43px, 17.45px) scale(1.276); opacity: 1.000; }
-        62% { transform: translate(-487.46px, 7.08px) scale(1.283); opacity: 1.000; }
-        63% { transform: translate(-484.33px, -2.48px) scale(1.291); opacity: 1.000; }
-        64% { transform: translate(-476.99px, -10.46px) scale(1.298); opacity: 1.000; }
-        65% { transform: translate(-466.71px, -16.34px) scale(1.305); opacity: 1.000; }
-        66% { transform: translate(-454.86px, -19.84px) scale(1.312); opacity: 1.000; }
-        67% { transform: translate(-442.82px, -21.00px) scale(1.320); opacity: 1.000; }
-        68% { transform: translate(-431.81px, -20.06px) scale(1.327); opacity: 1.000; }
-        69% { transform: translate(-422.77px, -17.46px) scale(1.334); opacity: 1.000; }
-        70% { transform: translate(-416.29px, -13.77px) scale(1.342); opacity: 1.000; }
-        71% { transform: translate(-412.59px, -9.58px) scale(1.349); opacity: 1.000; }
-        72% { transform: translate(-411.52px, -5.46px) scale(1.356); opacity: 1.000; }
-        73% { transform: translate(-412.67px, -1.86px) scale(1.364); opacity: 1.000; }
-        74% { transform: translate(-415.38px, 0.89px) scale(1.371); opacity: 1.000; }
-        75% { transform: translate(-418.93px, 2.66px) scale(1.378); opacity: 1.000; }
-        76% { transform: translate(-422.59px, 3.48px) scale(1.385); opacity: 1.000; }
-        77% { transform: translate(-425.79px, 3.55px) scale(1.393); opacity: 1.000; }
-        78% { transform: translate(-428.15px, 3.31px) scale(1.400); opacity: 1.000; }
-        79% { transform: translate(-430.00px, 0.00px) scale(0.933); opacity: 0.667; }
-        80% { transform: translate(-430.00px, 0.00px) scale(0.467); opacity: 0.333; }
-        81% { transform: translate(-430.00px, 0.00px) scale(0.010); opacity: 0.000; }
-        82% { transform: translate(-430.00px, 0.00px) scale(0.000); opacity: 0.000; }
-        83% { transform: translate(-430.00px, 0.00px) scale(0.000); opacity: 0.000; }
-        84% { transform: translate(-430.00px, 0.00px) scale(0.000); opacity: 0.000; }
-        85% { transform: translate(-430.00px, 0.00px) scale(0.000); opacity: 0.000; }
-        86% { transform: translate(-430.00px, 0.00px) scale(0.000); opacity: 0.000; }
-        87% { transform: translate(-430.00px, 0.00px) scale(0.000); opacity: 0.000; }
-        88% { transform: translate(-430.00px, 0.00px) scale(0.000); opacity: 0.000; }
-        89% { transform: translate(-430.00px, 0.00px) scale(0.000); opacity: 0.000; }
-        90% { transform: translate(-430.00px, 0.00px) scale(0.000); opacity: 0.000; }
-        91% { transform: translate(-430.00px, 0.00px) scale(0.000); opacity: 0.000; }
-        92% { transform: translate(-430.00px, 0.00px) scale(0.000); opacity: 0.000; }
-        93% { transform: translate(-430.00px, 0.00px) scale(0.000); opacity: 0.000; }
-        94% { transform: translate(-430.00px, 0.00px) scale(0.000); opacity: 0.000; }
-        95% { transform: translate(-430.00px, 0.00px) scale(0.000); opacity: 0.000; }
-        96% { transform: translate(-430.00px, 0.00px) scale(0.000); opacity: 0.000; }
-        97% { transform: translate(-430.00px, 0.00px) scale(0.000); opacity: 0.000; }
-        98% { transform: translate(-430.00px, 0.00px) scale(0.000); opacity: 0.000; }
-        99% { transform: translate(-430.00px, 0.00px) scale(0.000); opacity: 0.000; }
-        100% { transform: translate(-430.00px, 0.00px) scale(0.000); opacity: 0.000; }
+      @keyframes red-inspiral {
+        0% { transform: translate(1000.00px, 190.00px) scale(1.000); opacity: 0.000; }
+        1% { transform: translate(1000.00px, 190.00px) scale(1.015); opacity: 0.333; }
+        2% { transform: translate(1000.00px, 190.00px) scale(1.029); opacity: 0.667; }
+        3% { transform: translate(1000.00px, 190.00px) scale(1.041); opacity: 1.000; }
+        4% { transform: translate(1000.00px, 190.00px) scale(1.051); opacity: 1.000; }
+        5% { transform: translate(1000.00px, 190.00px) scale(1.057); opacity: 1.000; }
+        6% { transform: translate(1000.00px, 190.00px) scale(1.060); opacity: 1.000; }
+        7% { transform: translate(1000.00px, 190.00px) scale(1.059); opacity: 1.000; }
+        8% { transform: translate(1000.00px, 190.00px) scale(1.054); opacity: 1.000; }
+        9% { transform: translate(1000.00px, 190.00px) scale(1.046); opacity: 1.000; }
+        10% { transform: translate(1000.00px, 190.00px) scale(1.035); opacity: 1.000; }
+        11% { transform: translate(1000.00px, 190.00px) scale(1.022); opacity: 1.000; }
+        12% { transform: translate(1000.00px, 190.00px) scale(1.008); opacity: 1.000; }
+        13% { transform: translate(1000.00px, 190.00px) scale(0.992); opacity: 1.000; }
+        14% { transform: translate(1000.00px, 190.00px) scale(0.978); opacity: 1.000; }
+        15% { transform: translate(1000.00px, 190.00px) scale(0.965); opacity: 1.000; }
+        16% { transform: translate(1000.00px, 190.00px) scale(0.954); opacity: 1.000; }
+        17% { transform: translate(1000.00px, 190.00px) scale(0.946); opacity: 1.000; }
+        18% { transform: translate(1000.00px, 190.00px) scale(0.941); opacity: 1.000; }
+        19% { transform: translate(1000.00px, 190.00px) scale(0.940); opacity: 1.000; }
+        20% { transform: translate(1000.00px, 190.00px) scale(0.943); opacity: 1.000; }
+        21% { transform: translate(1000.00px, 190.00px) scale(0.949); opacity: 1.000; }
+        22% { transform: translate(1000.00px, 190.00px) scale(0.959); opacity: 1.000; }
+        23% { transform: translate(1000.00px, 190.00px) scale(0.971); opacity: 1.000; }
+        24% { transform: translate(1000.00px, 190.00px) scale(0.985); opacity: 1.000; }
+        25% { transform: translate(1000.00px, 190.00px) scale(1.000); opacity: 1.000; }
+        26% { transform: translate(998.79px, 190.00px) scale(1.001); opacity: 1.000; }
+        27% { transform: translate(995.18px, 190.00px) scale(1.003); opacity: 1.000; }
+        28% { transform: translate(989.24px, 190.00px) scale(1.006); opacity: 1.000; }
+        29% { transform: translate(981.07px, 190.00px) scale(1.011); opacity: 1.000; }
+        30% { transform: translate(970.84px, 190.00px) scale(1.017); opacity: 1.000; }
+        31% { transform: translate(958.73px, 190.00px) scale(1.024); opacity: 1.000; }
+        32% { transform: translate(944.97px, 190.00px) scale(1.032); opacity: 1.000; }
+        33% { transform: translate(929.81px, 190.00px) scale(1.040); opacity: 1.000; }
+        34% { transform: translate(913.53px, 190.00px) scale(1.050); opacity: 1.000; }
+        35% { transform: translate(896.45px, 190.00px) scale(1.060); opacity: 1.000; }
+        36% { transform: translate(878.87px, 190.00px) scale(1.070); opacity: 1.000; }
+        37% { transform: translate(861.13px, 190.00px) scale(1.080); opacity: 1.000; }
+        38% { transform: translate(843.55px, 190.00px) scale(1.090); opacity: 1.000; }
+        39% { transform: translate(826.47px, 190.00px) scale(1.100); opacity: 1.000; }
+        40% { transform: translate(810.19px, 190.00px) scale(1.110); opacity: 1.000; }
+        41% { transform: translate(795.03px, 190.00px) scale(1.118); opacity: 1.000; }
+        42% { transform: translate(781.27px, 190.00px) scale(1.126); opacity: 1.000; }
+        43% { transform: translate(769.16px, 190.00px) scale(1.133); opacity: 1.000; }
+        44% { transform: translate(758.93px, 190.00px) scale(1.139); opacity: 1.000; }
+        45% { transform: translate(750.76px, 190.00px) scale(1.144); opacity: 1.000; }
+        46% { transform: translate(744.82px, 190.00px) scale(1.147); opacity: 1.000; }
+        47% { transform: translate(741.21px, 190.00px) scale(1.149); opacity: 1.000; }
+        48% { transform: translate(740.00px, 190.00px) scale(1.150); opacity: 1.000; }
+        49% { transform: translate(719.47px, 240.28px) scale(1.159); opacity: 1.000; }
+        50% { transform: translate(658.10px, 272.26px) scale(1.168); opacity: 1.000; }
+        51% { transform: translate(583.87px, 278.78px) scale(1.177); opacity: 1.000; }
+        52% { transform: translate(518.48px, 260.42px) scale(1.186); opacity: 1.000; }
+        53% { transform: translate(479.17px, 224.69px) scale(1.195); opacity: 1.000; }
+        54% { transform: translate(474.15px, 183.22px) scale(1.204); opacity: 1.000; }
+        55% { transform: translate(501.23px, 148.08px) scale(1.212); opacity: 1.000; }
+        56% { transform: translate(549.42px, 128.29px) scale(1.221); opacity: 1.000; }
+        57% { transform: translate(603.00px, 127.61px) scale(1.230); opacity: 1.000; }
+        58% { transform: translate(646.50px, 143.95px) scale(1.239); opacity: 1.000; }
+        59% { transform: translate(669.09px, 170.71px) scale(1.248); opacity: 1.000; }
+        60% { transform: translate(667.21px, 199.11px) scale(1.257); opacity: 1.000; }
+        61% { transform: translate(644.66px, 221.04px) scale(1.266); opacity: 1.000; }
+        62% { transform: translate(610.66px, 231.32px) scale(1.275); opacity: 1.000; }
+        63% { transform: translate(576.37px, 228.81px) scale(1.284); opacity: 1.000; }
+        64% { transform: translate(551.45px, 216.21px) scale(1.293); opacity: 1.000; }
+        65% { transform: translate(541.33px, 198.73px) scale(1.302); opacity: 1.000; }
+        66% { transform: translate(546.27px, 182.16px) scale(1.311); opacity: 1.000; }
+        67% { transform: translate(562.08px, 171.02px) scale(1.320); opacity: 1.000; }
+        68% { transform: translate(582.07px, 167.41px) scale(1.329); opacity: 1.000; }
+        69% { transform: translate(599.61px, 170.78px) scale(1.337); opacity: 1.000; }
+        70% { transform: translate(610.14px, 178.56px) scale(1.346); opacity: 1.000; }
+        71% { transform: translate(612.29px, 187.37px) scale(1.355); opacity: 1.000; }
+        72% { transform: translate(607.64px, 194.30px) scale(1.364); opacity: 1.000; }
+        73% { transform: translate(599.57px, 197.80px) scale(1.373); opacity: 1.000; }
+        74% { transform: translate(591.64px, 197.89px) scale(1.382); opacity: 1.000; }
+        75% { transform: translate(586.20px, 195.78px) scale(1.391); opacity: 1.000; }
+        76% { transform: translate(583.53px, 193.06px) scale(1.400); opacity: 1.000; }
+        77% { transform: translate(590.00px, 190.00px) scale(0.622); opacity: 0.667; }
+        78% { transform: translate(590.00px, 190.00px) scale(0.156); opacity: 0.333; }
+        79% { transform: translate(590.00px, 190.00px) scale(0.010); opacity: 0.000; }
+        80% { transform: translate(590.00px, 190.00px) scale(0.000); opacity: 0.000; }
+        81% { transform: translate(590.00px, 190.00px) scale(0.000); opacity: 0.000; }
+        82% { transform: translate(590.00px, 190.00px) scale(0.000); opacity: 0.000; }
+        83% { transform: translate(590.00px, 190.00px) scale(0.000); opacity: 0.000; }
+        84% { transform: translate(590.00px, 190.00px) scale(0.000); opacity: 0.000; }
+        85% { transform: translate(590.00px, 190.00px) scale(0.000); opacity: 0.000; }
+        86% { transform: translate(590.00px, 190.00px) scale(0.000); opacity: 0.000; }
+        87% { transform: translate(590.00px, 190.00px) scale(0.000); opacity: 0.000; }
+        88% { transform: translate(590.00px, 190.00px) scale(0.000); opacity: 0.000; }
+        89% { transform: translate(590.00px, 190.00px) scale(0.000); opacity: 0.000; }
+        90% { transform: translate(590.00px, 190.00px) scale(0.000); opacity: 0.000; }
+        91% { transform: translate(590.00px, 190.00px) scale(0.000); opacity: 0.000; }
+        92% { transform: translate(590.00px, 190.00px) scale(0.000); opacity: 0.000; }
+        93% { transform: translate(590.00px, 190.00px) scale(0.000); opacity: 0.000; }
+        94% { transform: translate(590.00px, 190.00px) scale(0.000); opacity: 0.000; }
+        95% { transform: translate(590.00px, 190.00px) scale(0.000); opacity: 0.000; }
+        96% { transform: translate(590.00px, 190.00px) scale(0.000); opacity: 0.000; }
+        97% { transform: translate(590.00px, 190.00px) scale(0.000); opacity: 0.000; }
+        98% { transform: translate(590.00px, 190.00px) scale(0.000); opacity: 0.000; }
+        99% { transform: translate(590.00px, 190.00px) scale(0.000); opacity: 0.000; }
+        100% { transform: translate(590.00px, 190.00px) scale(0.000); opacity: 0.000; }
       }
 
-      /* SINGULARITY PULSE & EXPLOSION */
+      /* HOLLOW PURPLE DETONATION: Triggers precisely at 79% right as they compress */
       @keyframes purple-supernova {
-        0%, 78% { transform: scale(0); opacity: 0; }
-        80% { transform: scale(0.3); opacity: 0.9; }
-        82% { transform: scale(1.1); opacity: 1; }
-        86% { transform: scale(2.0); opacity: 0.95; }
-        93% { transform: scale(2.8); opacity: 0; }
-        100% { transform: scale(0); opacity: 0; }
+        0%, 78.5% { transform: translate(590px, 190px) scale(0); opacity: 0; }
+        79.5% { transform: translate(590px, 190px) scale(0.2); opacity: 1; }
+        82% { transform: translate(590px, 190px) scale(1.2); opacity: 1; }
+        87% { transform: translate(590px, 190px) scale(2.2); opacity: 0.95; }
+        93.5% { transform: translate(590px, 190px) scale(3.0); opacity: 0; }
+        100% { transform: translate(590px, 190px) scale(0); opacity: 0; }
       }
 
-      /* SHOCKWAVE RINGS */
-      @keyframes shockwave-outer {
-        0%, 79% { transform: scale(0.01); opacity: 0; }
-        81% { transform: scale(0.4); opacity: 0.95; }
-        89% { transform: scale(3.5); opacity: 0.5; }
-        95% { transform: scale(5.8); opacity: 0; }
-        100% { transform: scale(0); opacity: 0; }
+      /* SHOCKWAVE EXPANDING RINGS */
+      @keyframes shock-ring-outer {
+        0%, 79% { transform: translate(590px, 190px) scale(0.01); opacity: 0; }
+        81% { transform: translate(590px, 190px) scale(0.5); opacity: 0.95; }
+        89% { transform: translate(590px, 190px) scale(4.0); opacity: 0.5; }
+        95% { transform: translate(590px, 190px) scale(6.2); opacity: 0; }
+        100% { transform: translate(590px, 190px) scale(0); opacity: 0; }
       }
 
-      @keyframes shockwave-inner {
-        0%, 80.5% { transform: scale(0.01); opacity: 0; }
-        82.5% { transform: scale(0.5); opacity: 0.85; }
-        90% { transform: scale(4.2); opacity: 0.35; }
-        96% { transform: scale(6.5); opacity: 0; }
-        100% { transform: scale(0); opacity: 0; }
+      @keyframes shock-ring-inner {
+        0%, 80.5% { transform: translate(590px, 190px) scale(0.01); opacity: 0; }
+        82.5% { transform: translate(590px, 190px) scale(0.6); opacity: 0.9; }
+        90.5% { transform: translate(590px, 190px) scale(4.6); opacity: 0.35; }
+        96% { transform: translate(590px, 190px) scale(6.8); opacity: 0; }
+        100% { transform: translate(590px, 190px) scale(0); opacity: 0; }
       }
 
-      @keyframes beam-burst {
+      /* HORIZONTAL LASER BEAM BURST */
+      @keyframes laser-burst {
         0%, 79% { opacity: 0; transform: scaleX(0.05); }
         81.5% { opacity: 1; transform: scaleX(1); }
-        88% { opacity: 0.85; transform: scaleX(1.3); }
+        88% { opacity: 0.9; transform: scaleX(1.3); }
         94% { opacity: 0; transform: scaleX(1.8); }
         100% { opacity: 0; }
       }
 
       /* ========================================================================= */
-      /* SEQUENTIAL INCANTATIONS HUD (SOFT, CLEAR, ZERO OVERLAP)                   */
+      /* CHANTS TIMELINE (CLEAN, MUTUALLY EXCLUSIVE, ZERO OVERLAP)                 */
       /* ========================================================================= */
+
       @keyframes phase-1 {
         0% { opacity: 0; transform: translateY(6px); }
         3% { opacity: 1; transform: translateY(0); }
-        17% { opacity: 1; transform: translateY(0); }
-        21% { opacity: 0; transform: translateY(-6px); }
-        22%, 100% { opacity: 0; }
+        19% { opacity: 1; transform: translateY(0); }
+        23% { opacity: 0; transform: translateY(-6px); }
+        24%, 100% { opacity: 0; }
       }
 
       @keyframes phase-2 {
-        0%, 21% { opacity: 0; }
-        24% { opacity: 0; transform: translateY(6px); }
-        27% { opacity: 1; transform: translateY(0); }
-        38% { opacity: 1; transform: translateY(0); }
-        42% { opacity: 0; transform: translateY(-6px); }
-        43%, 100% { opacity: 0; }
+        0%, 23% { opacity: 0; }
+        25% { opacity: 0; transform: translateY(6px); }
+        28% { opacity: 1; transform: translateY(0); }
+        43% { opacity: 1; transform: translateY(0); }
+        47% { opacity: 0; transform: translateY(-6px); }
+        48%, 100% { opacity: 0; }
       }
 
       @keyframes phase-3 {
-        0%, 42% { opacity: 0; }
-        45% { opacity: 0; transform: translateY(6px); }
-        48% { opacity: 1; transform: translateY(0); }
-        59% { opacity: 1; transform: translateY(0); }
-        63% { opacity: 0; transform: translateY(-6px); }
-        64%, 100% { opacity: 0; }
+        0%, 47% { opacity: 0; }
+        49% { opacity: 0; transform: translateY(6px); }
+        52% { opacity: 1; transform: translateY(0); }
+        62% { opacity: 1; transform: translateY(0); }
+        66% { opacity: 0; transform: translateY(-6px); }
+        67%, 100% { opacity: 0; }
       }
 
       @keyframes phase-4 {
-        0%, 63% { opacity: 0; }
-        66% { opacity: 0; transform: translateY(6px); }
-        69% { opacity: 1; transform: translateY(0); }
-        76% { opacity: 1; transform: translateY(0); }
-        80% { opacity: 0; transform: translateY(-6px); }
-        81%, 100% { opacity: 0; }
+        0%, 66% { opacity: 0; }
+        68% { opacity: 0; transform: translateY(6px); }
+        71% { opacity: 1; transform: translateY(0); }
+        78% { opacity: 1; transform: translateY(0); }
+        81% { opacity: 0; transform: translateY(-6px); }
+        82%, 100% { opacity: 0; }
       }
 
       @keyframes phase-5 {
-        0%, 79% { opacity: 0; transform: scale(0.92); }
-        82% { opacity: 1; transform: scale(1.04); }
+        0%, 79% { opacity: 0; transform: scale(0.9); }
+        82% { opacity: 1; transform: scale(1.05); }
         93% { opacity: 1; transform: scale(1); }
-        97% { opacity: 0; transform: scale(1.08); }
+        97% { opacity: 0; transform: scale(1.1); }
         100% { opacity: 0; }
       }
 
-      .anim-blue-bh { animation: blue-orbit-smooth 16s linear infinite; }
-      .anim-red-bh  { animation: red-orbit-smooth 16s linear infinite; }
-      .anim-nova    { animation: purple-supernova 16s cubic-bezier(0.1, 0.9, 0.2, 1) infinite; transform-origin: 590px 190px; }
-      .anim-ring1   { animation: shockwave-outer 16s cubic-bezier(0.1, 0.9, 0.2, 1) infinite; transform-origin: 590px 190px; }
-      .anim-ring2   { animation: shockwave-inner 16s cubic-bezier(0.1, 0.9, 0.2, 1) infinite; transform-origin: 590px 190px; }
-      .anim-beam    { animation: beam-burst 16s cubic-bezier(0.1, 0.9, 0.2, 1) infinite; transform-origin: 590px 190px; }
+      .anim-blue-entity { animation: blue-inspiral 16s linear infinite; }
+      .anim-red-entity  { animation: red-inspiral 16s linear infinite; }
+      .anim-nova        { animation: purple-supernova 16s cubic-bezier(0.1, 0.9, 0.2, 1) infinite; }
+      .anim-ring-out    { animation: shock-ring-outer 16s cubic-bezier(0.1, 0.9, 0.2, 1) infinite; }
+      .anim-ring-in     { animation: shock-ring-inner 16s cubic-bezier(0.1, 0.9, 0.2, 1) infinite; }
+      .anim-beam        { animation: laser-burst 16s cubic-bezier(0.1, 0.9, 0.2, 1) infinite; transform-origin: 590px 190px; }
 
-      .hud-p1 { animation: phase-1 16s ease-in-out infinite; }
-      .hud-p2 { animation: phase-2 16s ease-in-out infinite; }
-      .hud-p3 { animation: phase-3 16s ease-in-out infinite; }
-      .hud-p4 { animation: phase-4 16s ease-in-out infinite; }
-      .hud-p5 { animation: phase-5 16s ease-in-out infinite; }
+      .hud-1 { animation: phase-1 16s ease-in-out infinite; }
+      .hud-2 { animation: phase-2 16s ease-in-out infinite; }
+      .hud-3 { animation: phase-3 16s ease-in-out infinite; }
+      .hud-4 { animation: phase-4 16s ease-in-out infinite; }
+      .hud-5 { animation: phase-5 16s ease-in-out infinite; }
     ]]></style>
 
-    <!-- Boundary clip to ensure 0% overflow outside card -->
-    <clipPath id="card-bounds">
+    <!-- Strict Card Bounds -->
+    <clipPath id="viewport-boundary">
       <rect x="0" y="0" width="1180" height="340" rx="18" />
     </clipPath>
 
-    <!-- Deep Void Canvas Gradient -->
-    <radialGradient id="canvas-void" cx="50%" cy="50%" r="75%">
+    <!-- Deep Void Cosmic Canvas Background -->
+    <radialGradient id="deep-void" cx="50%" cy="50%" r="75%">
       <stop offset="0%" stop-color="#0E0922" />
       <stop offset="55%" stop-color="#060412" />
       <stop offset="100%" stop-color="#030208" />
     </radialGradient>
 
-    <!-- Soft Black Hole Blue Gravitational Lens Gradient -->
-    <radialGradient id="blue-bh-glow" cx="50%" cy="50%" r="50%">
+    <!-- Blue Gravitational Aura Gradient -->
+    <radialGradient id="blue-gravity" cx="50%" cy="50%" r="50%">
       <stop offset="0%" stop-color="#FFFFFF" />
-      <stop offset="20%" stop-color="#7DD3FC" />
-      <stop offset="55%" stop-color="#0284C7" stop-opacity="0.8" />
+      <stop offset="22%" stop-color="#7DD3FC" />
+      <stop offset="55%" stop-color="#0284C7" stop-opacity="0.85" />
       <stop offset="80%" stop-color="#0369A1" stop-opacity="0.3" />
       <stop offset="100%" stop-color="#082F49" stop-opacity="0" />
     </radialGradient>
 
-    <!-- Soft Black Hole Red Gravitational Lens Gradient -->
-    <radialGradient id="red-bh-glow" cx="50%" cy="50%" r="50%">
+    <!-- Red Gravitational Aura Gradient -->
+    <radialGradient id="red-gravity" cx="50%" cy="50%" r="50%">
       <stop offset="0%" stop-color="#FFFFFF" />
-      <stop offset="20%" stop-color="#FDA4AF" />
-      <stop offset="55%" stop-color="#E11D48" stop-opacity="0.8" />
+      <stop offset="22%" stop-color="#FDA4AF" />
+      <stop offset="55%" stop-color="#E11D48" stop-opacity="0.85" />
       <stop offset="80%" stop-color="#BE123C" stop-opacity="0.3" />
       <stop offset="100%" stop-color="#4C0519" stop-opacity="0" />
     </radialGradient>
@@ -351,7 +353,7 @@
     </radialGradient>
 
     <!-- Horizontal Laser Surge Gradient -->
-    <linearGradient id="surge-laser" x1="0%" y1="0%" x2="100%" y2="0%">
+    <linearGradient id="laser-beam-grad" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#38BDF8" stop-opacity="0" />
       <stop offset="25%" stop-color="#38BDF8" stop-opacity="0.9" />
       <stop offset="50%" stop-color="#FFFFFF" stop-opacity="1" />
@@ -359,24 +361,24 @@
       <stop offset="100%" stop-color="#A855F7" stop-opacity="0" />
     </linearGradient>
 
-    <!-- Lensing Filters -->
-    <filter id="soft-lens" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="7" result="blur" />
+    <!-- Lensing Blur Filters -->
+    <filter id="blur-soft" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
       <feComposite in="SourceGraphic" in2="blur" operator="over" />
     </filter>
-    <filter id="hyper-lens" x="-60%" y="-60%" width="220%" height="220%">
+    <filter id="blur-wide" x="-60%" y="-60%" width="220%" height="220%">
       <feGaussianBlur stdDeviation="12" result="blur" />
       <feComposite in="SourceGraphic" in2="blur" operator="over" />
     </filter>
   </defs>
 
-  <!-- Deep Velvet Space Canvas -->
-  <rect width="1180" height="340" rx="18" fill="url(#canvas-void)" stroke="rgba(255,255,255,0.12)" stroke-width="1.2" />
+  <!-- Deep Canvas Background -->
+  <rect width="1180" height="340" rx="18" fill="url(#deep-void)" stroke="rgba(255,255,255,0.12)" stroke-width="1.2" />
 
-  <!-- Strictly clipped scene (no element ever escapes the card) -->
-  <g clip-path="url(#card-bounds)">
+  <!-- Strictly clipped content -->
+  <g clip-path="url(#viewport-boundary)">
 
-    <!-- Subtle Celestial Latitude Grid (No floating circles!) -->
+    <!-- Subtle Celestial Matrix Grid -->
     <g opacity="0.08">
       <line x1="0" y1="100" x2="1180" y2="100" stroke="#FFFFFF" stroke-dasharray="4 8" />
       <line x1="0" y1="190" x2="1180" y2="190" stroke="#FFFFFF" stroke-dasharray="4 8" />
@@ -384,104 +386,102 @@
     </g>
 
     <!-- ========================================================================= -->
-    <!-- CHANT HUD (TOP CENTER, ZERO OVERLAP, 100% HIGH LEGIBILITY)                -->
+    <!-- CHANT HUD (TOP CENTER, ZERO OVERLAP)                                      -->
     <!-- ========================================================================= -->
     <g class="font-sans" transform="translate(590, 52)">
       <!-- Phase 1: 九綱 -->
-      <g class="hud-p1" text-anchor="middle">
+      <g class="hud-1" text-anchor="middle">
         <rect x="-230" y="-28" width="460" height="56" rx="28" fill="rgba(2,132,199,0.12)" stroke="rgba(56,189,248,0.5)" stroke-width="1.2" />
         <text x="0" y="-4" fill="#38BDF8" font-size="18" font-weight="900" letter-spacing="4">九 綱</text>
         <text x="0" y="16" fill="#FFFFFF" font-size="11" font-weight="700" letter-spacing="2">INCANTATION PHASE 01 : NINE ROPES</text>
       </g>
 
       <!-- Phase 2: 偏光 -->
-      <g class="hud-p2" text-anchor="middle">
+      <g class="hud-2" text-anchor="middle">
         <rect x="-240" y="-28" width="480" height="56" rx="28" fill="rgba(225,29,72,0.12)" stroke="rgba(251,113,133,0.5)" stroke-width="1.2" />
         <text x="0" y="-4" fill="#FB7185" font-size="18" font-weight="900" letter-spacing="4">偏 光</text>
         <text x="0" y="16" fill="#FFFFFF" font-size="11" font-weight="700" letter-spacing="2">INCANTATION PHASE 02 : POLARIZED LIGHT</text>
       </g>
 
       <!-- Phase 3: 烏と声明 -->
-      <g class="hud-p3" text-anchor="middle">
+      <g class="hud-3" text-anchor="middle">
         <rect x="-260" y="-28" width="520" height="56" rx="28" fill="rgba(168,85,247,0.14)" stroke="rgba(192,132,252,0.5)" stroke-width="1.2" />
         <text x="0" y="-4" fill="#C084FC" font-size="18" font-weight="900" letter-spacing="4">烏 と 声 明</text>
         <text x="0" y="16" fill="#FFFFFF" font-size="11" font-weight="700" letter-spacing="2">INCANTATION PHASE 03 : CROW &amp; DECLARATION</text>
       </g>
 
       <!-- Phase 4: 表裏の間 -->
-      <g class="hud-p4" text-anchor="middle">
+      <g class="hud-4" text-anchor="middle">
         <rect x="-260" y="-28" width="520" height="56" rx="28" fill="rgba(147,51,234,0.16)" stroke="rgba(232,121,249,0.5)" stroke-width="1.2" />
         <text x="0" y="-4" fill="#E879F9" font-size="18" font-weight="900" letter-spacing="4">表 裏 の 間</text>
         <text x="0" y="16" fill="#FFFFFF" font-size="11" font-weight="700" letter-spacing="2">INCANTATION PHASE 04 : BETWEEN FRONT &amp; BACK</text>
       </g>
 
       <!-- Phase 5: 虚式「茈」 -->
-      <g class="hud-p5" text-anchor="middle">
-        <rect x="-280" y="-30" width="560" height="60" rx="30" fill="rgba(10,5,24,0.96)" stroke="#C084FC" stroke-width="1.8" filter="url(#soft-lens)" />
+      <g class="hud-5" text-anchor="middle">
+        <rect x="-280" y="-30" width="560" height="60" rx="30" fill="rgba(10,5,24,0.96)" stroke="#C084FC" stroke-width="1.8" filter="url(#blur-soft)" />
         <text x="0" y="-5" fill="#FFFFFF" font-size="20" font-weight="900" letter-spacing="3">虚 式 「 茈 」</text>
         <text x="0" y="17" fill="#E879F9" font-size="11.5" font-weight="800" letter-spacing="2">UNRESTRICTED HOLLOW PURPLE · 200% OUTPUT</text>
       </g>
     </g>
 
     <!-- ========================================================================= -->
-    <!-- BLUE BLACK HOLE (術式順転「蒼」) - ORBITING ENTITY                        -->
+    <!-- BLUE (術式順転「蒼」) - CENTERED AT LOCAL (0,0)                           -->
     <!-- ========================================================================= -->
-    <g class="anim-blue-bh">
-      <!-- Soft Gravitational Lensing Aura -->
-      <circle cx="160" cy="190" r="70" fill="url(#blue-bh-glow)" filter="url(#hyper-lens)" opacity="0.85" />
-      <!-- Event Horizon Core -->
-      <circle cx="160" cy="190" r="32" fill="url(#blue-bh-glow)" filter="url(#soft-lens)" />
-      <!-- Radiant Singularity Center -->
-      <circle cx="160" cy="190" r="14" fill="#FFFFFF" />
-
-      <!-- Minimal Soft Technique Label (Follows Orb) -->
-      <text x="160" y="242" fill="#38BDF8" font-size="12" font-weight="800" letter-spacing="1" text-anchor="middle" class="font-sans">術式順転「蒼」</text>
-      <text x="160" y="255" fill="rgba(255,255,255,0.4)" font-size="9" font-weight="600" letter-spacing="1.5" text-anchor="middle" class="font-sans">LAPSE: BLUE</text>
+    <g class="anim-blue-entity">
+      <!-- Outer Gravitational Aura -->
+      <circle cx="0" cy="0" r="70" fill="url(#blue-gravity)" filter="url(#blur-wide)" opacity="0.85" />
+      <!-- Dense Event Horizon -->
+      <circle cx="0" cy="0" r="32" fill="url(#blue-gravity)" filter="url(#blur-soft)" />
+      <!-- Radiant Core -->
+      <circle cx="0" cy="0" r="14" fill="#FFFFFF" />
+      <!-- Subtitle -->
+      <text x="0" y="52" fill="#38BDF8" font-size="12" font-weight="800" letter-spacing="1" text-anchor="middle" class="font-sans">術式順転「蒼」</text>
+      <text x="0" y="65" fill="rgba(255,255,255,0.4)" font-size="9" font-weight="600" letter-spacing="1.5" text-anchor="middle" class="font-sans">LAPSE: BLUE</text>
     </g>
 
     <!-- ========================================================================= -->
-    <!-- RED BLACK HOLE (術式反転「赫」) - ORBITING ENTITY                         -->
+    <!-- RED (術式反転「赫」) - CENTERED AT LOCAL (0,0)                            -->
     <!-- ========================================================================= -->
-    <g class="anim-red-bh">
-      <!-- Soft Gravitational Lensing Aura -->
-      <circle cx="1020" cy="190" r="70" fill="url(#red-bh-glow)" filter="url(#hyper-lens)" opacity="0.85" />
-      <!-- Event Horizon Core -->
-      <circle cx="1020" cy="190" r="32" fill="url(#red-bh-glow)" filter="url(#soft-lens)" />
-      <!-- Radiant Singularity Center -->
-      <circle cx="1020" cy="190" r="14" fill="#FFFFFF" />
-
-      <!-- Minimal Soft Technique Label (Follows Orb) -->
-      <text x="1020" y="242" fill="#FB7185" font-size="12" font-weight="800" letter-spacing="1" text-anchor="middle" class="font-sans">術式反転「赫」</text>
-      <text x="1020" y="255" fill="rgba(255,255,255,0.4)" font-size="9" font-weight="600" letter-spacing="1.5" text-anchor="middle" class="font-sans">REVERSAL: RED</text>
+    <g class="anim-red-entity">
+      <!-- Outer Gravitational Aura -->
+      <circle cx="0" cy="0" r="70" fill="url(#red-gravity)" filter="url(#blur-wide)" opacity="0.85" />
+      <!-- Dense Event Horizon -->
+      <circle cx="0" cy="0" r="32" fill="url(#red-gravity)" filter="url(#blur-soft)" />
+      <!-- Radiant Core -->
+      <circle cx="0" cy="0" r="14" fill="#FFFFFF" />
+      <!-- Subtitle -->
+      <text x="0" y="52" fill="#FB7185" font-size="12" font-weight="800" letter-spacing="1" text-anchor="middle" class="font-sans">術式反転「赫」</text>
+      <text x="0" y="65" fill="rgba(255,255,255,0.4)" font-size="9" font-weight="600" letter-spacing="1.5" text-anchor="middle" class="font-sans">REVERSAL: RED</text>
     </g>
 
     <!-- ========================================================================= -->
-    <!-- CENTER: COLLAPSE & SUPERNOVA HOLLOW PURPLE DETONATION                     -->
+    <!-- SUPERNOVA HOLLOW PURPLE DETONATION (CENTERED AT LOCAL 0,0)                -->
     <!-- ========================================================================= -->
 
     <!-- Laser Shockwave Beam Surge -->
     <g class="anim-beam">
-      <ellipse cx="590" cy="190" rx="490" ry="34" fill="url(#surge-laser)" filter="url(#hyper-lens)" />
+      <ellipse cx="590" cy="190" rx="490" ry="34" fill="url(#laser-beam-grad)" filter="url(#blur-wide)" />
       <line x1="100" y1="190" x2="1080" y2="190" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" />
     </g>
 
     <!-- Expanding Lensing Rings -->
-    <g class="anim-ring2">
-      <circle cx="590" cy="190" r="65" stroke="#FFFFFF" stroke-width="1.5" fill="none" opacity="0.65" />
+    <g class="anim-ring-out">
+      <circle cx="0" cy="0" r="65" stroke="#FFFFFF" stroke-width="1.5" fill="none" opacity="0.65" />
     </g>
-    <g class="anim-ring1">
-      <circle cx="590" cy="190" r="50" stroke="#E879F9" stroke-width="2.2" fill="none" opacity="0.85" />
-      <circle cx="590" cy="190" r="75" stroke="#C084FC" stroke-width="1.4" fill="none" opacity="0.75" />
+    <g class="anim-ring-in">
+      <circle cx="0" cy="0" r="50" stroke="#E879F9" stroke-width="2.2" fill="none" opacity="0.85" />
+      <circle cx="0" cy="0" r="75" stroke="#C084FC" stroke-width="1.4" fill="none" opacity="0.75" />
     </g>
 
     <!-- Supernova Singularity Core -->
     <g class="anim-nova">
-      <circle cx="590" cy="190" r="68" fill="#7E22CE" opacity="0.35" filter="url(#hyper-lens)" />
-      <circle cx="590" cy="190" r="45" fill="url(#purple-singularity)" filter="url(#soft-lens)" />
-      <circle cx="590" cy="190" r="16" fill="#FFFFFF" />
+      <circle cx="0" cy="0" r="68" fill="#7E22CE" opacity="0.35" filter="url(#blur-wide)" />
+      <circle cx="0" cy="0" r="45" fill="url(#purple-singularity)" filter="url(#blur-soft)" />
+      <circle cx="0" cy="0" r="16" fill="#FFFFFF" />
     </g>
 
-  </g> <!-- End card-bounds clip -->
+  </g> <!-- End viewport-boundary clip -->
 
   <!-- Outer Razor Frame -->
   <rect x="1" y="1" width="1178" height="338" rx="17.5" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="1.4" />
