@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>虚式「茈」 — Hollow Purple 200% | Alceinn</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: #030208;
+      overflow: hidden;
+      font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+      color: #fff;
+    }
+    #canvas-container {
+      position: fixed;
+      inset: 0;
+    }
+    canvas { display: block; width: 100% !important; height: 100% !important; }
+
+    /* HUD Overlay */
+    #hud {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 10;
+    }
+
+    /* Phase indicator */
+    #phase-card {
+      position: absolute;
+      top: 36px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+      transition: opacity 0.6s ease;
+    }
+    #phase-kanji {
+      font-size: clamp(32px, 5vw, 54px);
+      font-weight: 900;
+      letter-spacing: 0.12em;
+      color: #fff;
+      text-shadow: 0 0 30px currentColor;
+      transition: color 0.5s ease, text-shadow 0.5s ease;
+    }
+    #phase-en {
+      font-size: clamp(10px, 1.4vw, 14px);
+      font-weight: 700;
+      letter-spacing: 0.25em;
+      color: rgba(255,255,255,0.65);
+    }
+    #phase-num {
+      font-size: clamp(9px, 1vw, 11px);
+      font-weight: 600;
+      letter-spacing: 0.2em;
+      color: rgba(255,255,255,0.35);
+    }
+
+    /* Bottom labels */
+    #bottom-hud {
+      position: absolute;
+      bottom: 28px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      color: rgba(255,255,255,0.35);
+      white-space: nowrap;
+    }
+    .sep { color: rgba(255,255,255,0.18); }
+
+    /* Corner credits */
+    #corner-tl, #corner-tr {
+      position: absolute;
+      top: 22px;
+      font-size: 10px;
+      letter-spacing: 0.18em;
+      font-weight: 700;
+      color: rgba(255,255,255,0.3);
+    }
+    #corner-tl { left: 28px; }
+    #corner-tr { right: 28px; }
+
+    /* Side technique labels */
+    #label-blue {
+      position: absolute;
+      left: 40px;
+      bottom: 50%;
+      transform: translateY(50%);
+      text-align: left;
+    }
+    #label-red {
+      position: absolute;
+      right: 40px;
+      bottom: 50%;
+      transform: translateY(50%);
+      text-align: right;
+    }
+    .tech-kanji {
+      font-size: clamp(14px, 2vw, 18px);
+      font-weight: 900;
+      letter-spacing: 0.08em;
+    }
+    .tech-en {
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.2em;
+      color: rgba(255,255,255,0.45);
+      margin-top: 4px;
+    }
+    #label-blue .tech-kanji { color: #38BDF8; text-shadow: 0 0 20px #38BDF8; }
+    #label-red  .tech-kanji { color: #FB7185; text-shadow: 0 0 20px #FB7185; }
+
+    /* Hollow Purple final badge */
+    #hp-badge {
+      position: absolute;
+      bottom: 64px;
+      left: 50%;
+      transform: translateX(-50%) scale(0);
+      opacity: 0;
+      background: rgba(8,4,20,0.95);
+      border: 1.5px solid #C084FC;
+      border-radius: 40px;
+      padding: 10px 28px;
+      font-size: clamp(13px, 1.6vw, 17px);
+      font-weight: 900;
+      letter-spacing: 0.12em;
+      color: #fff;
+      box-shadow: 0 0 28px rgba(192,132,252,0.7);
+      transition: opacity 0.4s, transform 0.4s cubic-bezier(0.34,1.56,0.64,1);
+      white-space: nowrap;
+    }
+    #hp-badge.visible { opacity: 1; transform: translateX(-50%) scale(1); }
+
+    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800;900&display=swap');
+  </style>
+</head>
+<body>
+
+<div id="canvas-container"><canvas id="c"></canvas></div>
+
+<div id="hud">
+  <div id="corner-tl">ALCEIN.COM.TR</div>
+  <div id="corner-tr">無量空処 · LIMITLESS</div>
+
+  <div id="phase-card">
+    <div id="phase-kanji">九 綱</div>
+    <div id="phase-en">NINE ROPES</div>
+    <div id="phase-num">INCANTATION PHASE 01</div>
+  </div>
+
+  <div id="label-blue">
+    <div class="tech-kanji">術式順転「蒼」</div>
+    <div class="tech-en">LAPSE : BLUE</div>
+  </div>
+  <div id="label-red">
+    <div class="tech-kanji">術式反転「赫」</div>
+    <div class="tech-en">REVERSAL : RED</div>
+  </div>
+
+  <div id="hp-badge">虚式「茈」 HOLLOW PURPLE · 200%</div>
+
+  <div id="bottom-hud">
+    <span>DOMAIN STATUS : ACTIVE</span>
+    <span class="sep">·</span>
+    <span>MAXIMUM UNRESTRICTED OUTPUT</span>
+    <span class="sep">·</span>
+    <span id="energy-label">CURSED ENERGY : CHARGING</span>
+  </div>
+</div>
+
+<!-- Three.js via CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+
+<script>
+// ============================================================
+// HOLLOW PURPLE · THREE.JS 3D SCENE
+// ============================================================
+
+const canvas = document.getElementById('c');
+const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true });
+renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+renderer.setSize(window.innerWidth, window.innerHeight);
+renderer.setClearColor(0x030208, 1);
+
+const scene = new THREE.Scene();
+const camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 0.1, 500);
+camera.position.set(0, 0, 22);
+
+window.addEventListener('resize', () => {
+  camera.aspect = window.innerWidth / window.innerHeight;
+  camera.updateProjectionMatrix();
+  renderer.setSize(window.innerWidth, window.innerHeight);
+});
+
+// ─── HELPERS ────────────────────────────────────────────────
+function mkMat(color, opacity = 1, additive = false) {
+  return new THREE.MeshStandardMaterial({
+    color, transparent: opacity < 1 || additive,
+    opacity, side: THREE.FrontSide,
+    blending: additive ? THREE.AdditiveBlending : THREE.NormalBlending,
+    depthWrite: !additive
+  });
+}
+function mkGlow(geo, color) {
+  return new THREE.Mesh(geo, new THREE.MeshBasicMaterial({
+    color, transparent: true, opacity: 0.18,
+    blending: THREE.AdditiveBlending, side: THREE.BackSide, depthWrite: false
+  }));
+}
+
+// ─── LIGHTING ───────────────────────────────────────────────
+const ambient = new THREE.AmbientLight(0x1a0a2e, 2);
+scene.add(ambient);
+const blueLight = new THREE.PointLight(0x38BDF8, 5, 30);
+blueLight.position.set(-8, 0, 5);
+scene.add(blueLight);
+const redLight = new THREE.PointLight(0xFB7185, 5, 30);
+redLight.position.set(8, 0, 5);
+scene.add(redLight);
+const purpleLight = new THREE.PointLight(0xC084FC, 0, 25);
+purpleLight.position.set(0, 0, 4);
+scene.add(purpleLight);
+const centerLight = new THREE.PointLight(0xFFFFFF, 0, 15);
+centerLight.position.set(0, 0, 3);
+scene.add(centerLight);
+
+// ─── STAR FIELD ─────────────────────────────────────────────
+{
+  const geom = new THREE.BufferGeometry();
+  const n = 2400;
+  const pos = new Float32Array(n * 3);
+  const sz = new Float32Array(n);
+  for (let i = 0; i < n; i++) {
+    pos[i*3]   = (Math.random()-0.5)*180;
+    pos[i*3+1] = (Math.random()-0.5)*100;
+    pos[i*3+2] = (Math.random()-0.5)*80 - 20;
+    sz[i] = Math.random() * 1.4 + 0.3;
+  }
+  geom.setAttribute('position', new THREE.BufferAttribute(pos, 3));
+  geom.setAttribute('size', new THREE.BufferAttribute(sz, 1));
+  const starMat = new THREE.PointsMaterial({
+    color: 0xffffff, size: 0.12,
+    transparent: true, opacity: 0.7,
+    blending: THREE.AdditiveBlending, depthWrite: false
+  });
+  scene.add(new THREE.Points(geom, starMat));
+}
+
+// ─── CONSTELLATION LINES ────────────────────────────────────
+{
+  const pts = [];
+  const nodes = Array.from({length: 28}, () => new THREE.Vector3(
+    (Math.random()-0.5)*36, (Math.random()-0.5)*18, (Math.random()-0.5)*4 - 12
+  ));
+  for (let i = 0; i < nodes.length; i++) {
+    for (let j = i+1; j < nodes.length; j++) {
+      const d = nodes[i].distanceTo(nodes[j]);
+      if (d > 3.5 && d < 7.5) { pts.push(nodes[i], nodes[j]); }
+    }
+  }
+  const lineGeom = new THREE.BufferGeometry().setFromPoints(pts);
+  scene.add(new THREE.LineSegments(lineGeom, new THREE.LineBasicMaterial({
+    color: 0xffffff, transparent: true, opacity: 0.08,
+    blending: THREE.AdditiveBlending, depthWrite: false
+  })));
+}
+
+// ─── GROUND PLANE GRID ──────────────────────────────────────
+{
+  const grid = new THREE.GridHelper(50, 30, 0x1a0a2e, 0x0d0520);
+  grid.position.set(0, -5, 0);
+  grid.rotation.x = 0;
+  grid.material.transparent = true;
+  grid.material.opacity = 0.35;
+  scene.add(grid);
+}
+
+// ─── BLUE ORB (術式順転「蒼」) ──────────────────────────────
+const blueGroup = new THREE.Group();
+const blueCore = new THREE.Mesh(new THREE.SphereGeometry(0.9, 32, 32), new THREE.MeshStandardMaterial({ color: 0xffffff, emissive: 0x38BDF8, emissiveIntensity: 2 }));
+const blueGlowMesh = mkGlow(new THREE.SphereGeometry(2.2, 32, 32), 0x38BDF8);
+blueGlowMesh.material.opacity = 0.25;
+const blueGlowMesh2 = mkGlow(new THREE.SphereGeometry(3.8, 32, 32), 0x0284C7);
+// Orbit ring
+const blueRing = new THREE.Mesh(
+  new THREE.TorusGeometry(2.0, 0.025, 8, 80),
+  new THREE.MeshBasicMaterial({ color: 0x38BDF8, transparent: true, opacity: 0.8, blending: THREE.AdditiveBlending })
+);
+blueRing.rotation.x = Math.PI / 2.2;
+const blueRing2 = new THREE.Mesh(
+  new THREE.TorusGeometry(2.8, 0.012, 8, 80),
+  new THREE.MeshBasicMaterial({ color: 0x38BDF8, transparent: true, opacity: 0.4, blending: THREE.AdditiveBlending })
+);
+blueRing2.rotation.x = -Math.PI / 3;
+blueRing2.rotation.z = Math.PI / 5;
+blueGroup.add(blueCore, blueGlowMesh, blueGlowMesh2, blueRing, blueRing2);
+blueGroup.position.set(-9, 0, 0);
+scene.add(blueGroup);
+
+// ─── RED ORB (術式反転「赫」) ───────────────────────────────
+const redGroup = new THREE.Group();
+const redCore = new THREE.Mesh(new THREE.SphereGeometry(0.9, 32, 32), new THREE.MeshStandardMaterial({ color: 0xffffff, emissive: 0xFB7185, emissiveIntensity: 2 }));
+const redGlowMesh = mkGlow(new THREE.SphereGeometry(2.2, 32, 32), 0xFB7185);
+redGlowMesh.material.opacity = 0.25;
+const redGlowMesh2 = mkGlow(new THREE.SphereGeometry(3.8, 32, 32), 0xE11D48);
+const redRing = new THREE.Mesh(
+  new THREE.TorusGeometry(2.0, 0.025, 8, 80),
+  new THREE.MeshBasicMaterial({ color: 0xFB7185, transparent: true, opacity: 0.8, blending: THREE.AdditiveBlending })
+);
+redRing.rotation.x = Math.PI / 2.2;
+const redRing2 = new THREE.Mesh(
+  new THREE.TorusGeometry(2.8, 0.012, 8, 80),
+  new THREE.MeshBasicMaterial({ color: 0xFB7185, transparent: true, opacity: 0.4, blending: THREE.AdditiveBlending })
+);
+redRing2.rotation.x = -Math.PI / 3;
+redRing2.rotation.z = -Math.PI / 5;
+redGroup.add(redCore, redGlowMesh, redGlowMesh2, redRing, redRing2);
+redGroup.position.set(9, 0, 0);
+scene.add(redGroup);
+
+// ─── CENTER HOLLOW PURPLE SINGULARITY ───────────────────────
+const purpleGroup = new THREE.Group();
+const purpleCore = new THREE.Mesh(
+  new THREE.SphereGeometry(1.0, 32, 32),
+  new THREE.MeshStandardMaterial({ color: 0xffffff, emissive: 0xC084FC, emissiveIntensity: 4, transparent: true, opacity: 0 })
+);
+const purpleGlow1 = mkGlow(new THREE.SphereGeometry(3.5, 32, 32), 0xC084FC);
+purpleGlow1.material.opacity = 0;
+const purpleGlow2 = mkGlow(new THREE.SphereGeometry(6, 32, 32), 0x7E22CE);
+purpleGlow2.material.opacity = 0;
+const purpleGlow3 = mkGlow(new THREE.SphereGeometry(10, 32, 32), 0x3B0764);
+purpleGlow3.material.opacity = 0;
+
+// Shockwave expanding rings
+const ringGeo = new THREE.TorusGeometry(1, 0.06, 8, 120);
+const ringMat1 = new THREE.MeshBasicMaterial({ color: 0xE879F9, transparent: true, opacity: 0, blending: THREE.AdditiveBlending, depthWrite: false });
+const ringMat2 = new THREE.MeshBasicMaterial({ color: 0xC084FC, transparent: true, opacity: 0, blending: THREE.AdditiveBlending, depthWrite: false });
+const ringMat3 = new THREE.MeshBasicMaterial({ color: 0xFFFFFF, transparent: true, opacity: 0, blending: THREE.AdditiveBlending, depthWrite: false });
+const shockRing1 = new THREE.Mesh(new THREE.TorusGeometry(1, 0.07, 8, 120), ringMat1);
+const shockRing2 = new THREE.Mesh(new THREE.TorusGeometry(1, 0.045, 8, 120), ringMat2);
+const shockRing3 = new THREE.Mesh(new THREE.TorusGeometry(1, 0.025, 8, 120), ringMat3);
+
+purpleGroup.add(purpleCore, purpleGlow1, purpleGlow2, purpleGlow3, shockRing1, shockRing2, shockRing3);
+scene.add(purpleGroup);
+
+// ─── HORIZONTAL LASER BEAM ─────────────────────────────────
+const beamGeom = new THREE.CylinderGeometry(0.04, 0.04, 30, 16);
+beamGeom.rotateZ(Math.PI / 2);
+const beamMat = new THREE.MeshBasicMaterial({
+  color: 0xffffff, transparent: true, opacity: 0,
+  blending: THREE.AdditiveBlending, depthWrite: false
+});
+const beam = new THREE.Mesh(beamGeom, beamMat);
+beam.position.set(0, 0, 1);
+scene.add(beam);
+
+const beamGlowGeom = new THREE.CylinderGeometry(0.35, 0.35, 30, 16);
+beamGlowGeom.rotateZ(Math.PI / 2);
+const beamGlowMat = new THREE.MeshBasicMaterial({
+  color: 0xA855F7, transparent: true, opacity: 0,
+  blending: THREE.AdditiveBlending, depthWrite: false, side: THREE.BackSide
+});
+const beamGlow = new THREE.Mesh(beamGlowGeom, beamGlowMat);
+beamGlow.position.set(0, 0, 1);
+scene.add(beamGlow);
+
+// ─── INCANTATION PHASES ─────────────────────────────────────
+const phases = [
+  { kanji: '九 綱',     en: 'NINE ROPES',          num: 'INCANTATION PHASE 01', color: '#38BDF8', glow: '#38BDF8' },
+  { kanji: '偏 光',     en: 'POLARIZED LIGHT',      num: 'INCANTATION PHASE 02', color: '#FB7185', glow: '#FB7185' },
+  { kanji: '烏 と 声 明', en: 'CROW & DECLARATION',  num: 'INCANTATION PHASE 03', color: '#C084FC', glow: '#C084FC' },
+  { kanji: '表 裏 の 間', en: 'BETWEEN FRONT & BACK', num: 'INCANTATION PHASE 04', color: '#E879F9', glow: '#E879F9' },
+  { kanji: '虚 式 「 茈 」', en: 'HOLLOW PURPLE · 200%', num: 'MAXIMUM UNRESTRICTED OUTPUT', color: '#FFFFFF', glow: '#C084FC' },
+];
+
+const phaseKanji = document.getElementById('phase-kanji');
+const phaseEn = document.getElementById('phase-en');
+const phaseNum = document.getElementById('phase-num');
+const phaseCard = document.getElementById('phase-card');
+const hpBadge = document.getElementById('hp-badge');
+const energyLabel = document.getElementById('energy-label');
+const labelBlue = document.getElementById('label-blue');
+const labelRed = document.getElementById('label-red');
+
+// ─── ANIMATION STATE ────────────────────────────────────────
+let clock = new THREE.Clock();
+// Total cycle: 16s (Slow-burn cinematic buildup, orbital dance & massive detonation)
+// 0-3.5s: Phase 1 (Nine Ropes) - orbs charging
+// 3.5-7s: Phase 2 (Polarized Light) - orbs slowly glide towards center
+// 7-10.5s: Phase 3 (Crow & Declaration) - orbs near center, tension builds
+// 10.5-13s: Phase 4 (Between Front & Back) - orbs rotate/dance around each other
+// 13-16s: Phase 5 (Hollow Purple) - collapse & supernova shockwave blast
+const CYCLE = 16.0;
+
+let currentPhase = -1;
+
+function easeInOut(t) { return t < 0.5 ? 2*t*t : -1+(4-2*t)*t; }
+function clamp(v, a, b) { return Math.max(a, Math.min(b, v)); }
+function lerp(a, b, t) { return a + (b-a)*t; }
+
+function setPhase(idx) {
+  if (idx === currentPhase) return;
+  currentPhase = idx;
+  const p = phases[idx];
+  phaseCard.style.opacity = '0';
+  setTimeout(() => {
+    phaseKanji.textContent = p.kanji;
+    phaseEn.textContent = p.en;
+    phaseNum.textContent = p.num;
+    phaseKanji.style.color = p.color;
+    phaseKanji.style.textShadow = `0 0 30px ${p.glow}`;
+    phaseCard.style.opacity = '1';
+  }, 300);
+}
+
+function tick() {
+  requestAnimationFrame(tick);
+  const elapsed = clock.getElapsedTime();
+  const t = (elapsed % CYCLE) / CYCLE; // 0..1 normalised
+
+  // === ORB POSITIONS ===
+  let blueX = -9, redX = 9, blueY = 0, redY = 0, blueScale = 1, redScale = 1;
+
+  if (t < 0.40) {
+    // Stage 1: Stationary charging + breathing
+    const breathe = 1 + 0.08 * Math.sin(elapsed * 2.2);
+    blueX = -9; redX = 9;
+    blueY = 0; redY = 0;
+    blueScale = redScale = breathe;
+    labelBlue.style.opacity = '1';
+    labelRed.style.opacity = '1';
+  } else if (t < 0.65) {
+    // Stage 2: Slow glide towards center
+    const glide = easeInOut((t - 0.40) / 0.25);
+    blueX = lerp(-9, -3.2, glide);
+    redX  = lerp( 9,  3.2, glide);
+    blueY = 0; redY = 0;
+    blueScale = redScale = 1 + glide * 0.25;
+    labelBlue.style.opacity = String(1 - glide * 0.5);
+    labelRed.style.opacity  = String(1 - glide * 0.5);
+  } else if (t < 0.81) {
+    // Stage 3: Orbital spiral dance around center before fusion
+    const spiralProgress = (t - 0.65) / 0.16;
+    const spiralAngle = spiralProgress * Math.PI * 4; // 2 complete revolutions
+    const radius = lerp(3.2, 0.2, easeInOut(spiralProgress));
+    
+    blueX = -Math.cos(spiralAngle) * radius;
+    blueY =  Math.sin(spiralAngle) * radius;
+    redX  =  Math.cos(spiralAngle) * radius;
+    redY  = -Math.sin(spiralAngle) * radius;
+    
+    blueScale = redScale = 1.25 + spiralProgress * 0.25;
+    labelBlue.style.opacity = String(Math.max(0, 0.5 - spiralProgress));
+    labelRed.style.opacity  = String(Math.max(0, 0.5 - spiralProgress));
+  } else {
+    // Stage 4: Fused into Singularity (Orbs hidden)
+    blueX = 0; redX = 0;
+    blueY = 0; redY = 0;
+    blueScale = 0; redScale = 0;
+    labelBlue.style.opacity = '0';
+    labelRed.style.opacity  = '0';
+  }
+
+  blueGroup.position.set(blueX, blueY, 0);
+  redGroup.position.set(redX, redY, 0);
+  blueGroup.scale.setScalar(clamp(blueScale, 0, 5));
+  redGroup.scale.setScalar(clamp(redScale, 0, 5));
+
+  // Orbit ring spin
+  blueRing.rotation.z  += 0.02;
+  blueRing2.rotation.y += 0.015;
+  redRing.rotation.z   -= 0.02;
+  redRing2.rotation.y  -= 0.015;
+
+  // Lights track orbs
+  blueLight.position.set(blueX - 1.5, blueY, 3);
+  redLight.position.set(redX + 1.5, redY, 3);
+
+  // === PHASE SELECTION ===
+  if      (t < 0.23) setPhase(0);
+  else if (t < 0.45) setPhase(1);
+  else if (t < 0.66) setPhase(2);
+  else if (t < 0.82) setPhase(3);
+  else               setPhase(4);
+
+  // === PURPLE SUPERNOVA ===
+  let purpleIntensity = 0;
+  let ringScale1 = 0.01, ringScale2 = 0.01, ringScale3 = 0.01;
+  let ringOp1 = 0, ringOp2 = 0, ringOp3 = 0;
+  let beamOp = 0, beamGlowOp = 0;
+
+  if (t >= 0.81 && t < 0.88) {
+    purpleIntensity = easeInOut((t - 0.81) / 0.07);
+  } else if (t >= 0.88 && t < 0.95) {
+    purpleIntensity = 1;
+  } else if (t >= 0.95) {
+    purpleIntensity = 1 - easeInOut((t - 0.95) / 0.05);
+  }
+
+  // Shockwave rings expand then fade
+  if (t >= 0.82) {
+    const dt = (t - 0.82);
+    ringScale1 = 1 + dt * 26;
+    ringScale2 = 1 + dt * 18;
+    ringScale3 = 1 + dt * 12;
+    ringOp1 = clamp(1 - dt * 6, 0, 1);
+    ringOp2 = clamp(1 - dt * 4.5, 0, 1);
+    ringOp3 = clamp(1 - dt * 3.5, 0, 1);
+  }
+
+  // Beam surge
+  if (t >= 0.82 && t < 0.94) {
+    const bp = (t - 0.82) / 0.12;
+    beamOp = bp < 0.3 ? bp/0.3 : (bp < 0.7 ? 1 : 1 - (bp-0.7)/0.3);
+    beamGlowOp = beamOp * 0.5;
+  }
+
+  purpleCore.material.opacity   = clamp(purpleIntensity, 0, 1);
+  purpleGlow1.material.opacity  = clamp(purpleIntensity * 0.55, 0, 1);
+  purpleGlow2.material.opacity  = clamp(purpleIntensity * 0.3, 0, 1);
+  purpleGlow3.material.opacity  = clamp(purpleIntensity * 0.15, 0, 1);
+  purpleLight.intensity         = purpleIntensity * 22;
+  centerLight.intensity         = purpleIntensity * 10;
+
+  const pScale = clamp(0.6 + purpleIntensity * 1.5, 0, 3.2);
+  purpleCore.scale.setScalar(pScale);
+  purpleGlow1.scale.setScalar(pScale);
+  purpleGlow2.scale.setScalar(pScale * 0.9);
+  purpleGlow3.scale.setScalar(pScale * 0.8);
+
+  shockRing1.scale.setScalar(ringScale1);
+  shockRing2.scale.setScalar(ringScale2);
+  shockRing3.scale.setScalar(ringScale3);
+  ringMat1.opacity = ringOp1;
+  ringMat2.opacity = ringOp2;
+  ringMat3.opacity = ringOp3;
+
+  beamMat.opacity     = beamOp;
+  beamGlowMat.opacity = beamGlowOp;
+
+  // HP Badge visibility
+  if (t >= 0.83 && t < 0.97) {
+    hpBadge.classList.add('visible');
+  } else {
+    hpBadge.classList.remove('visible');
+  }
+
+  // Energy label
+  if (t < 0.65) {
+    const pct = Math.round(t / 0.65 * 100);
+    energyLabel.textContent = `CURSED ENERGY : ${pct}%`;
+  } else if (t < 0.81) {
+    energyLabel.textContent = 'CURSED ENERGY : CONVERGING & SPIRALING';
+  } else {
+    energyLabel.textContent = 'CURSED ENERGY : 200% MAXIMUM OUTPUT';
+  }
+
+  // Camera slight float
+  camera.position.y = Math.sin(elapsed * 0.18) * 0.4;
+  camera.lookAt(0, 0, 0);
+
+  renderer.render(scene, camera);
+}
+
+tick();
+</script>
+</body>
+</html>

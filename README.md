@@ -10,7 +10,15 @@
 
 <!-- HOLLOW PURPLE INCANTATION & 200% CURSED SHOCKWAVE -->
 <div align="center">
-  <img width="100%" src="https://raw.githubusercontent.com/Alceinn/Alceinn/main/hollow_purple_wave.svg" alt="Hollow Purple 200% Incantation & Wave" />
+  <a href="https://alceinn.github.io/Alceinn/" target="_blank">
+    <img width="100%" src="https://raw.githubusercontent.com/Alceinn/Alceinn/main/hollow_purple_wave.svg" alt="Hollow Purple 200% — Click for 3D" />
+  </a>
+</div>
+
+<div align="center">
+  <a href="https://alceinn.github.io/Alceinn/" target="_blank">
+    <img src="https://img.shields.io/badge/%E8%99%9A%E5%BC%8F%E3%80%8C%E8%8C%88%E3%80%8D__HOLLOW_PURPLE__3D_EXPERIENCE-040408?style=for-the-badge&logo=three.js&logoColor=C084FC&labelColor=040408" alt="3D Hollow Purple" />
+  </a>
 </div>
 
 <br/>
